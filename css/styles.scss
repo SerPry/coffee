@@ -1,0 +1,259 @@
+$color2: #eee;
+$color3: rgb(35, 34, 37);
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    overflow-x: hidden;
+    header {
+        nav {
+            position: relative;
+            text-align: center;
+            height: 186px;
+            background: url("../svg/bricks-1.svg");
+            font-size: 2em;
+            [class*="col-"]{
+                margin-top: 2%;
+            }
+            a {
+                // display: block;
+                margin-top: 10%;
+                color: black;
+            }
+            .logo {
+                position: absolute;
+                top: 0;
+                left: 35%;
+            }
+        }
+        .divider-1 {
+            height: 35px;
+            width: 100%;
+            background: url("../svg/divider-1.svg");
+        }
+        .gradient {
+            height: 280px;
+            background: url("../img/grad.png");
+        }
+    }
+    /*end of header*/
+    .obj-zone {
+        position: relative;
+        .container {
+            .working-Status{
+                position: absolute;
+                font-size: 2.2em;
+                z-index: 10;
+                top:43%;
+                left:46%;
+            }
+            .items {
+                position: absolute;
+                top: 49%;
+                z-index: 2;
+                transform: scale(.7);
+                &:first-of-type {
+                    left: -2%;
+                }
+                &:nth-of-type(2) {
+                    z-index: 3;
+                    left: 7%;
+                    top: 45%;
+                }
+                &:nth-of-type(3) {
+                    left: 21%;
+                }
+            }
+            .row {
+                img {
+                    height: 138px;
+                    margin: 0 auto;
+                    width: 103%;
+                    position: absolute;
+                    z-index: 2;
+                }
+                [class*='zone-'] {
+                    height: 582px;
+                    padding: 0;
+                    background-size: auto 60%;
+                }
+                .zone-1,
+                .zone-3,
+                .zone-1-1,
+                .zone-3-1 {
+                    background: url("../svg/1Scroll_windows part-1 test.svg") no-repeat;
+                    background-size: auto 60%;
+                    background-position: center 43%;
+                }
+                .zone-1-1 {
+                    background-position: right 43%;
+                }
+                .zone-3-1 {
+                    background-position: left 43%;
+                }
+                .zone-2 {
+                    background: url("../svg/1Scroll_door.svg") no-repeat;
+                    background-position: 0 225%;
+                }
+            }
+            .static {
+                position: absolute;
+                height: 70%;
+                width: 70%;
+                top: 60%;
+                right: -12%;
+            }
+        }
+    }
+    .floor {
+        background: url("../svg/1Scroll_floor.svg");
+        background-size: cover;
+        height: 210px;
+    }
+    .content-menu {
+        height: 945px;
+        background: url("../img/2scroll-full.png");
+        background-size: auto 945px;
+        background-position: bottom center;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            &:last-of-type {
+                left: -3%;
+            }
+        }
+        ul {
+            margin: 30% auto;
+            text-align: center;
+            &.ft {
+                li {
+                    color: $color2;
+                }
+            }
+            &.sd {
+                li {
+                    color: $color3;
+                }
+            }
+            li {
+                font-size: 3em;
+                list-style: none;
+            }
+        }
+    }
+    /*end of content-menu*/
+    .reservation {
+        position: relative;
+        .container {
+            .row {
+                background: url("../svg/res_back.svg") no-repeat;
+                [class*='col-'] {
+                    height: 1200px;
+                    padding: 0;
+                }
+                img {
+                    position: absolute;
+                }
+                .windows {
+                    height: 100%;
+                    width: 85%;
+                    top: -3.5%;
+                    &:first-of-type {
+                        left: 7.5%;
+                    }
+                }
+                .col-md-6 {
+                    p {
+                        color: red;
+                        font-size: 2.5em;
+                        position: absolute;
+                        text-transform: uppercase;
+                        width: 255px;
+                        text-align: center;
+                        top: 59%;
+                        left: 30%;
+                    }
+                    img:not(.sceen) {
+                        top: 47.5%;
+                        left: 43%;
+                    }
+                }
+            }
+        }
+    }
+    /*end of reservation*/
+    .hands-up {
+        height: 830px;
+        position: relative;
+        background: url("../img/hands-up-bg.png");
+        .row {
+            img {
+                width: 100%;
+            }
+            .col-md-7 {
+                img {
+                    margin-top: 50%;
+                }
+            }
+            .col-md-3 {
+                img {
+                    margin-top: 24%;
+                    margin-left: 47%;
+                }
+            }
+            .col-md-2 {
+                img {
+                    width: 120%;
+                    margin-top: 230%;
+                    margin-left: -115%;
+                }
+            }
+        }
+    }
+    /*  end of hands-up*/
+    footer{
+        height: 755px;
+        background: url('../svg/footer.svg') no-repeat;
+        background-color: rgba(165,212,207,.8);
+        background-size: 100% auto;
+        overflow: hidden;
+        position: relative;
+        .container{
+            overflow: hidden;
+            .stuff{
+                position: absolute;
+                transform: scale(.8);
+                &:last-of-type{
+                    top:-15%;
+                    left:-15%;
+                }
+            }
+            .row{
+                img{
+                    width: 100%;
+                    margin-top: 50%;
+                }
+                img[src^='svg/footer-3']{
+                    width: 85%;
+                    margin-top: 119%;
+                }
+                img[src^='svg/footer-1']{
+                    margin-top: 119%;
+                }
+                img[src^='svg/footer-2']{
+                    margin-top: 92%;
+                }
+                img[src^='svg/footer-4']{
+                    margin-top: 201%;
+                    margin-left: -5%;
+                }
+            }
+        }
+    }/*end of footer*/
+}
+/*end of main container*/
