@@ -2,187 +2,200 @@
   padding: 0;
   margin: 0; }
 
-.container {
-  overflow: hidden;
-  /*end of header*/
-  /*end of content-menu*/
-  /*end of reservation*/
-  /*  end of hands-up*/
-  /*end of footer*/ }
-  .container header nav {
-    position: relative;
-    text-align: center;
-    height: 186px;
-    background: url("../svg/bricks-1.svg");
-    font-size: 2em; }
-    .container header nav [class*="col-"] {
-      margin-top: 2%; }
-    .container header nav a {
-      margin-top: 10%;
-      color: black; }
-    .container header nav .logo {
-      position: absolute;
-      top: 0;
-      left: 35%; }
-  .container header .divider-1 {
-    height: 35px;
-    width: 100%;
-    background: url("../svg/divider-1.svg"); }
-  .container header .gradient {
-    height: 280px;
-    background: url("../img/grad.png"); }
-  .container .obj-zone {
-    position: relative; }
-    .container .obj-zone .container .working-Status {
-      position: absolute;
-      font-size: 2.2em;
-      z-index: 10;
-      top: 43%;
-      left: 46%; }
-    .container .obj-zone .container .items {
-      position: absolute;
-      top: 49%;
-      z-index: 2;
-      transform: scale(0.7); }
-      .container .obj-zone .container .items:first-of-type {
-        left: -2%; }
-      .container .obj-zone .container .items:nth-of-type(2) {
-        z-index: 3;
-        left: 7%;
-        top: 45%; }
-      .container .obj-zone .container .items:nth-of-type(3) {
-        left: 21%; }
-    .container .obj-zone .container .row img {
-      height: 138px;
-      margin: 0 auto;
-      width: 103%;
-      position: absolute;
-      z-index: 2; }
-    .container .obj-zone .container .row [class*='zone-'] {
-      height: 582px;
-      padding: 0;
-      background-size: auto 60%; }
-    .container .obj-zone .container .row .zone-1,
-    .container .obj-zone .container .row .zone-3,
-    .container .obj-zone .container .row .zone-1-1,
-    .container .obj-zone .container .row .zone-3-1 {
-      background: url("../svg/1Scroll_windows part-1 test.svg") no-repeat;
-      background-size: auto 60%;
-      background-position: center 43%; }
-    .container .obj-zone .container .row .zone-1-1 {
-      background-position: right 43%; }
-    .container .obj-zone .container .row .zone-3-1 {
-      background-position: left 43%; }
-    .container .obj-zone .container .row .zone-2 {
-      background: url("../svg/1Scroll_door.svg") no-repeat;
-      background-position: 0 225%; }
-    .container .obj-zone .container .static {
-      position: absolute;
-      height: 70%;
-      width: 70%;
-      top: 60%;
-      right: -12%; }
-  .container .floor {
-    background: url("../svg/1Scroll_floor.svg");
-    background-size: cover;
-    height: 210px; }
-  .container .content-menu {
-    height: 945px;
-    background: url("../img/2scroll-full.png");
-    background-size: auto 945px;
-    background-position: bottom center;
-    overflow: hidden;
-    position: relative;
-    z-index: 2; }
-    .container .content-menu img {
-      position: absolute;
-      top: 0;
-      left: 0; }
-      .container .content-menu img:last-of-type {
-        left: -3%; }
-    .container .content-menu ul {
-      margin: 30% auto;
-      text-align: center; }
-      .container .content-menu ul.ft li {
-        color: #eee; }
-      .container .content-menu ul.sd li {
-        color: #232225; }
-      .container .content-menu ul li {
-        font-size: 3em;
-        list-style: none; }
-  .container .reservation {
-    position: relative; }
-    .container .reservation .container .row {
-      background: url("../svg/res_back.svg") no-repeat; }
-      .container .reservation .container .row [class*='col-'] {
-        height: 1200px;
-        padding: 0; }
-      .container .reservation .container .row img {
-        position: absolute; }
-      .container .reservation .container .row .windows {
-        height: 100%;
-        width: 85%;
-        top: -3.5%; }
-        .container .reservation .container .row .windows:first-of-type {
-          left: 7.5%; }
-      .container .reservation .container .row .col-md-6 p {
-        color: red;
-        font-size: 2.5em;
-        position: absolute;
-        text-transform: uppercase;
-        width: 255px;
-        text-align: center;
-        top: 59%;
-        left: 30%; }
-      .container .reservation .container .row .col-md-6 img:not(.sceen) {
-        top: 47.5%;
-        left: 43%; }
-  .container .hands-up {
-    height: 830px;
-    position: relative;
-    overflow: hidden;
-    background: url("../img/hands-up-bg.png"); }
-    .container .hands-up .row img {
-      width: 100%; }
-    .container .hands-up .row .col-md-7 img {
-      margin-top: 50%; }
-    .container .hands-up .row .col-md-3 img {
-      margin-top: 24%;
-      margin-left: 47%; }
-    .container .hands-up .row .col-md-2 img {
-      width: 120%;
-      margin-top: 230%;
-      margin-left: -115%; }
-  .container footer {
-      overflow: hidden;
-    height: 675px;
-    background: url("../svg/footer.svg") no-repeat;
-    background-color: rgba(165, 212, 207, 0.8);
-    background-size: 100% auto;
-    overflow: hidden;
-    position: relative; }
-    .container footer .container {
-      overflow: hidden; }
-      .container footer .container .stuff {
-        position: absolute;
-        transform: scale(0.8); }
-        .container footer .container .stuff:last-of-type {
-          top: -15%;
-          left: -15%; }
-      .container footer .container .row img {
-        width: 100%;
-        margin-top: 50%; }
-      .container footer .container .row img[src^='svg/footer-3'] {
-        width: 85%;
-        margin-top: 119%; }
-      .container footer .container .row img[src^='svg/footer-1'] {
-        margin-top: 119%; }
-      .container footer .container .row img[src^='svg/footer-2'] {
-        margin-top: 92%; }
-      .container footer .container .row img[src^='svg/footer-4'] {
-        margin-top: 201%;
-        margin-left: -5%; }
+.container-fluid {
+  overflow-x: hidden;
+  padding: 0; }
 
+header nav {
+  position: relative;
+  text-align: center;
+  height: 186px;
+  background: url("../svg/bricks-1.svg");
+  font-size: 2em; }
+  header nav [class*="col-"] {
+    margin-top: 2%; }
+  header nav a {
+    margin-top: 10%;
+    color: black; }
+  header nav .logo {
+    position: absolute;
+    top: 0;
+    width: 12%;
+    margin: 0 auto; }
+header .divider-1 {
+  height: 35px;
+  width: 100%;
+  background: url("../svg/divider-1.svg"); }
+header .gradient {
+  height: 180px;
+  background-image: -webkit-linear-gradient(right, #586e66 50%, #83ad9e 50%);
+  background-image: linear-gradient(to left, #586e66 50%, #83ad9e 50%);
+  background-size: 5%; }
+
+/*end of header*/
+.obj-zone {
+  position: relative; }
+  .obj-zone .container .working-Status {
+    position: absolute;
+    font-size: 2.2em;
+    z-index: 10;
+    top: 43%;
+    left: 46%; }
+  .obj-zone .container .items {
+    position: absolute;
+    top: 49%;
+    z-index: 2;
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7); }
+    .obj-zone .container .items:first-of-type {
+      left: -2%; }
+    .obj-zone .container .items:nth-of-type(2) {
+      z-index: 3;
+      left: 7%;
+      top: 45%; }
+    .obj-zone .container .items:nth-of-type(3) {
+      left: 21%; }
+  .obj-zone .container .row img {
+    height: 138px;
+    margin: 0 auto;
+    width: 103%;
+    position: absolute;
+    z-index: 2; }
+  .obj-zone .container .row [class*='zone-'] {
+    height: 582px;
+    padding: 0;
+    background-size: auto 60%; }
+  .obj-zone .container .row .zone-1,
+  .obj-zone .container .row .zone-3,
+  .obj-zone .container .row .zone-1-1,
+  .obj-zone .container .row .zone-3-1 {
+    background: url("../svg/1Scroll_windows part-1 test.svg") no-repeat;
+    background-size: auto 60%;
+    background-position: center 43%; }
+  .obj-zone .container .row .zone-1-1 {
+    background-position: right 43%; }
+  .obj-zone .container .row .zone-3-1 {
+    background-position: left 43%; }
+  .obj-zone .container .row .zone-2 {
+    background: url("../svg/1Scroll_door.svg") no-repeat;
+    background-position: 0 225%; }
+  .obj-zone .container .static {
+    position: absolute;
+    height: 70%;
+    width: 70%;
+    top: 60%;
+    right: -12%; }
+
+.floor {
+  background: url("../svg/1Scroll_floor.svg");
+  background-size: cover;
+  height: 210px; }
+
+.content-menu {
+  height: 945px;
+  background: url("../img/2scroll-full.png");
+  background-size: auto 945px;
+  background-position: bottom center;
+  overflow: hidden;
+  position: relative;
+  z-index: 2; }
+  .content-menu img {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .content-menu img:last-of-type {
+      left: -3%; }
+  .content-menu ul {
+    margin: 30% auto;
+    text-align: center; }
+    .content-menu ul.ft li {
+      color: #eee; }
+    .content-menu ul.sd li {
+      color: #232225; }
+    .content-menu ul li {
+      font-size: 3em;
+      list-style: none; }
+
+/*end of content-menu*/
+.reservation {
+  position: relative; }
+  .reservation .container .row {
+    background: url("../svg/res_back.svg") no-repeat; }
+    .reservation .container .row [class*='col-'] {
+      height: 1200px;
+      padding: 0; }
+    .reservation .container .row img {
+      position: absolute; }
+    .reservation .container .row .windows {
+      height: 100%;
+      width: 85%;
+      top: -3.5%; }
+      .reservation .container .row .windows:first-of-type {
+        left: 7.5%; }
+    .reservation .container .row .col-md-6 p {
+      color: red;
+      font-size: 2.5em;
+      position: absolute;
+      text-transform: uppercase;
+      width: 255px;
+      text-align: center;
+      top: 59%;
+      left: 30%; }
+    .reservation .container .row .col-md-6 img:not(.sceen) {
+      top: 47.5%;
+      left: 43%; }
+
+/*end of reservation*/
+.hands-up {
+  height: 830px;
+  position: relative;
+  background: url("../img/hands-up-bg.png"); }
+  .hands-up .row img {
+    width: 100%; }
+  .hands-up .row .col-md-7 img {
+    margin-top: 50%; }
+  .hands-up .row .col-md-3 img {
+    margin-top: 24%;
+    margin-left: 47%; }
+  .hands-up .row .col-md-2 img {
+    width: 120%;
+    margin-top: 230%;
+    margin-left: -115%; }
+
+/*  end of hands-up*/
+footer {
+  height: 755px;
+  background: url("../svg/footer.svg") no-repeat;
+  background-color: rgba(165, 212, 207, 0.8);
+  background-size: 100% auto;
+  overflow: hidden;
+  position: relative; }
+  footer .container {
+    overflow: hidden; }
+    footer .container .stuff {
+      position: absolute;
+      -webkit-transform: scale(0.8);
+          -ms-transform: scale(0.8);
+              transform: scale(0.8); }
+      footer .container .stuff:last-of-type {
+        top: -15%;
+        left: -15%; }
+    footer .container .row img {
+      width: 100%;
+      margin-top: 50%; }
+    footer .container .row img[src^='svg/footer-3'] {
+      width: 85%;
+      margin-top: 119%; }
+    footer .container .row img[src^='svg/footer-1'] {
+      margin-top: 119%; }
+    footer .container .row img[src^='svg/footer-2'] {
+      margin-top: 92%; }
+    footer .container .row img[src^='svg/footer-4'] {
+      margin-top: 201%;
+      margin-left: -5%; }
+
+/*end of footer*/
 /*end of main container*/
 
 /*# sourceMappingURL=styles.css.map */

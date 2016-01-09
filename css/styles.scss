@@ -4,8 +4,10 @@ $color3: rgb(35, 34, 37);
     padding: 0;
     margin: 0;
 }
-.container {
+.container-fluid {
     overflow-x: hidden;
+    padding: 0;
+  }
     header {
         nav {
             position: relative;
@@ -24,7 +26,8 @@ $color3: rgb(35, 34, 37);
             .logo {
                 position: absolute;
                 top: 0;
-                left: 35%;
+                width: 12%;
+                margin: 0 auto;
             }
         }
         .divider-1 {
@@ -33,8 +36,9 @@ $color3: rgb(35, 34, 37);
             background: url("../svg/divider-1.svg");
         }
         .gradient {
-            height: 280px;
-            background: url("../img/grad.png");
+            height: 180px;
+            background-image:linear-gradient(to left,#586e66 50%,#83ad9e 50%);
+            background-size: 5%;
         }
     }
     /*end of header*/
@@ -255,5 +259,5 @@ $color3: rgb(35, 34, 37);
             }
         }
     }/*end of footer*/
-}
+
 /*end of main container*/
