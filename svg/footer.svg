@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1"
-	 id="svg13880" sodipodi:docname="footer.svg" inkscape:version="0.91 r" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1709.41px"
-	 height="989.302px" viewBox="0 0 1709.41 989.302" enable-background="new 0 0 1709.41 989.302" xml:space="preserve">
-<sodipodi:namedview  units="px" id="base" fit-margin-bottom="0" fit-margin-right="0" inkscape:window-y="24" inkscape:window-x="0" inkscape:window-height="744" inkscape:window-width="1366" inkscape:current-layer="layer1" inkscape:document-units="px" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:cy="404.18629" fit-margin-left="0" fit-margin-top="0" inkscape:cx="1115.0394" inkscape:zoom="0.49497475" borderopacity="1.0" bordercolor="#666666" showgrid="false" pagecolor="#ffffff" inkscape:window-maximized="1">
+	 id="svg13880" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:version="0.91 r" sodipodi:docname="footer.svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="557 -74.4 1709.4 989.3"
+	 style="enable-background:new 557 -74.4 1709.4 989.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.3;fill:#9CD0CA;enable-background:new    ;}
+	.st1{fill:#B8B4AF;}
+	.st2{fill:#71685F;}
+	.st3{fill:#837B73;}
+</style>
+<sodipodi:namedview  id="base" inkscape:cy="404.18629" inkscape:cx="1115.0394" inkscape:zoom="0.49497475" showgrid="false" borderopacity="1.0" pagecolor="#ffffff" bordercolor="#666666" inkscape:current-layer="layer1" inkscape:window-maximized="1" inkscape:window-y="24" inkscape:window-x="0" inkscape:window-width="1366" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:window-height="744" fit-margin-bottom="0" inkscape:document-units="px" fit-margin-right="0" fit-margin-top="0" units="px" fit-margin-left="0">
 	</sodipodi:namedview>
 <g id="layer1" transform="translate(-632.1435,327.04373)" inkscape:groupmode="layer" inkscape:label="Layer 1">
-	<path id="path5771" inkscape:connector-curvature="0" opacity="0.3" fill="#9CD0CA" enable-background="new    " d="
-		M2321.878,168.086h-2.512V44.444l-65.229,33.999v191.652h-34.996V-48.292h-38.597v-46.85h-43.483v46.85h-17.752v318.386h-25.738
-		v-43.273l-57.108,40.346V161.626h-14.812v-20.12h-8.983v20.12h-9.117v-20.12h-8.983v20.12h-10.15v60.341h-70.018V12.327h-18.866
-		v-61.991h-19.671v-26.188h-15.257l-2.046-31.38l-37.118,30.996l-0.021,0.384h-15.517v26.188h-19.663v61.991h-18.871V57
-		l-12.427,11.569V195.82h-31.526v-29.365h-26.279v29.365h-8.125v-81.175l-108.036-45.103v-176.709h-25.257v-11.873h-76.331v11.873
-		h-17.567v343.759h-50.971V-14.631h-16.358v-12.237h-77.104V-68.47h-28.04v53.84h-23.37v251.223h-16.367V140.66l-20.717-17.394
-		v-22.306c0,0-2.929-2.643-8.471-5.386V16.485c0,0-2.196-4.694-7.319-9.305v-9.136c0,0-1.21-2.757-4.242-5.73v-8.623
-		c0,0-1.775-4.088-6.581-7.242v-5.5c0,0-1.508-3.444-5.656-5.761v-3.959c0,0-1.307-4.447-5.082-6.635v-8.815
-		c0,0-1.104-5.771-4.438-6.81l0.35-44.519c0,0-0.877-3.619-1.226-0.661c-0.331,2.845-1.311,42.067-1.388,45.178
-		c-3.251,0.995-4.683,5.621-4.683,6.813v10.041c-2.411,1.959-3.541,4.526-3.541,5.409v5.167c-2.572,1.79-3.768,3.796-3.768,4.554
-		v6.81c-3.207,2.38-4.704,4.938-4.704,5.932v8.756c-2.573,2.361-3.806,4.616-3.806,5.596V7.09c-4.22,3.877-6.076,7.895-6.076,9.395
-		v81.682c-1.851,0.859-3.715,1.774-5.63,2.795v21.158l-20.249,18.541v340.217h1209.17v-370.75h-19.677V168.086L2321.878,168.086z"/>
-	<path id="path5813" inkscape:connector-curvature="0" fill="#837B73" d="M632.144,513.278h1709.41v-55.797H632.144V513.278
-		L632.144,513.278z"/>
-	<path id="path5815" inkscape:connector-curvature="0" fill="#B8B4AF" d="M632.144,662.259h1709.41V497.94H632.144V662.259
-		L632.144,662.259z"/>
-	<path id="path5817" inkscape:connector-curvature="0" fill="#71685F" d="M632.144,528.874h1709.41V497.68H632.144V528.874
-		L632.144,528.874z"/>
+	<path id="path5771" inkscape:connector-curvature="0" class="st0" d="M2878.9,93.7h-2.5V-30l-65.2,34v191.7h-35v-318.4h-38.6v-46.8
+		h-43.5v46.8h-17.8v318.4h-25.7v-43.3l-57.1,40.3V87.2h-14.8V67.1h-9v20.1h-9.1V67.1h-9v20.1h-10.2v60.3h-70V-62.1h-18.9v-62h-19.7
+		v-26.2h-15.3l-2-31.4l-37.1,31l0,0.4h-15.5v26.2h-19.7v62h-18.9v44.7l-12.4,11.6v127.3h-31.5V92h-26.3v29.4h-8.1V40.2L2138-4.9
+		v-176.7h-25.3v-11.9h-76.3v11.9h-17.6v343.8h-51V-89h-16.4v-12.2h-77.1v-41.6h-28V-89H1823v251.2h-16.4V66.2l-20.7-17.4V26.5
+		c0,0-2.9-2.6-8.5-5.4v-79.1c0,0-2.2-4.7-7.3-9.3v-9.1c0,0-1.2-2.8-4.2-5.7v-8.6c0,0-1.8-4.1-6.6-7.2v-5.5c0,0-1.5-3.4-5.7-5.8v-4
+		c0,0-1.3-4.4-5.1-6.6v-8.8c0,0-1.1-5.8-4.4-6.8l0.3-44.5c0,0-0.9-3.6-1.2-0.7c-0.3,2.8-1.3,42.1-1.4,45.2c-3.3,1-4.7,5.6-4.7,6.8
+		v10c-2.4,2-3.5,4.5-3.5,5.4v5.2c-2.6,1.8-3.8,3.8-3.8,4.6v6.8c-3.2,2.4-4.7,4.9-4.7,5.9v8.8c-2.6,2.4-3.8,4.6-3.8,5.6v9
+		c-4.2,3.9-6.1,7.9-6.1,9.4v81.7c-1.9,0.9-3.7,1.8-5.6,2.8v21.2l-20.2,18.5v340.2h1209.2V35.7h-19.7L2878.9,93.7L2878.9,93.7z"/>
+	<path id="path5815" inkscape:connector-curvature="0" class="st1" d="M1189.1,587.8h1709.4V423.5H1189.1V587.8L1189.1,587.8z"/>
+	<path id="path5817" inkscape:connector-curvature="0" class="st2" d="M1189.1,488.5h1709.4v-36H1189.1V488.5L1189.1,488.5z"/>
+	<path id="path5813" inkscape:connector-curvature="0" class="st3" d="M1189.1,452.5h1709.4v-69.4H1189.1V452.5L1189.1,452.5z"/>
 </g>
 </svg>
