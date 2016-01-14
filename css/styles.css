@@ -339,10 +339,15 @@ footer {
     height: 180px; } }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
+  header .divider-1 {
+    height: 35px;
+    width: 100%;
+    background: url(../svg/divider-1.svg); }
+  header .gradient {
+    height: 130px;
+    background-size: 5%; }
   header nav {
     height: 165px; }
-    header nav .gradient {
-      height: 125px; }
 
   .content-menu {
     height: 945px;

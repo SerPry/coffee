@@ -483,11 +483,17 @@ footer {
    /* Medium Devices, Desktops */
    @media only screen and (min-width : 992px) {
       header{
+        .divider-1 {
+          height: 35px;
+          width: 100%;
+          background: url(../svg/divider-1.svg);
+        }
+        .gradient {
+          height: 130px;
+          background-size: 5%;
+        }
         nav{
           height: 165px;
-          .gradient{
-            height: 125px;
-          }
         }
       }
       .content-menu {
