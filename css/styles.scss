@@ -11,12 +11,24 @@ $color3: rgb(35, 34, 37);
   height: 100%;
 }
 header {
+    #main-navbar{
+        background:url('../svg/bricks.svg');
+        margin-bottom: 0;
+        li{
+            font-size: 2em;
+            width: 200px;
+            text-align: center;
+        }
+
+    }
+
+
   nav {
-    position: relative;
-    text-align: center;
-    height: 186px;
-    background: url(../svg/bricks-1.svg);
-    font-size: 2em;
+  //   position: relative;
+  //   text-align: center;
+  //   height: 186px;
+  //   background: url(../svg/bricks-1.svg);
+  //   font-size: 2em;
     [class*="col-"] {
       margin-top: 2%;
     }
@@ -164,10 +176,10 @@ header {
   background: url("../svg/res_back.svg") ;
   .container {
     .row {
-      [class*='col-'] {
-        // height: 1200px;
-        padding: 0;
-      }
+    //   [class*='col-'] {
+    //     // height: 1200px;
+    //     padding: 0;
+    //   }
       img {
         position: absolute;
       }
@@ -280,8 +292,12 @@ footer {
 /* Custom, iPhone Retina */
    @media only screen and (min-width : 320px) {
      header{
-       nav{
-           height: 105px;
+       #main-navbar{
+           background-repeat: repeat;
+           li{
+               font-size: 1em;
+            //    background-color: #eee;
+           }
 
        }
        .divider-1{

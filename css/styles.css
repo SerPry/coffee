@@ -8,26 +8,27 @@
 .fullHeight {
   height: 100%; }
 
-header nav {
-  position: relative;
-  text-align: center;
-  height: 186px;
-  background: url(../svg/bricks-1.svg);
-  font-size: 2em; }
-  header nav [class*="col-"] {
-    margin-top: 2%; }
-  header nav a {
-    margin-top: 10%;
-    color: black; }
-  header nav .logo {
-    position: absolute;
-    top: 0;
-    width: 210px;
-    z-index: 4;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-        transform: translateX(-50%); }
+header #main-navbar {
+  background: url("../svg/bricks.svg");
+  margin-bottom: 0; }
+  header #main-navbar li {
+    font-size: 2em;
+    width: 200px;
+    text-align: center; }
+header nav [class*="col-"] {
+  margin-top: 2%; }
+header nav a {
+  margin-top: 10%;
+  color: black; }
+header nav .logo {
+  position: absolute;
+  top: 0;
+  width: 210px;
+  z-index: 4;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
 header .divider-1 {
   height: 35px;
   width: 100%;
@@ -128,8 +129,6 @@ header .gradient {
 .reservation {
   background-color: #90B4B7;
   background: url("../svg/res_back.svg"); }
-  .reservation .container .row [class*='col-'] {
-    padding: 0; }
   .reservation .container .row img {
     position: absolute; }
   .reservation .container .row .windows {
@@ -200,8 +199,10 @@ footer {
 /*----------------Media query--------------------------*/
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
-  header nav {
-    height: 105px; }
+  header #main-navbar {
+    background-repeat: repeat; }
+    header #main-navbar li {
+      font-size: 1em; }
   header .divider-1 {
     height: 10px; }
   header .gradient {
