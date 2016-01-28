@@ -318,7 +318,7 @@ footer {
        }
        .container{
          .working-Status{
-           top:28%;
+           top:35%;
            left:50%;
            -webkit-transform: translateX(-50%);
                    transform: translateX(-50%);
@@ -340,19 +340,20 @@ footer {
         background-image: url("../svg/2scrollLeft-01.svg");
         background-size: cover;
         ul{
+            margin: 30% -10px;
           li{
             font-size: 2em;
           }
         }
       }
       .reservation{
-        height: 450px;
-        background-size: auto 450px;
+        height: 400px;
+        background-size: auto 400px;
         img{
           height: auto;
           width: 65%;
           left: 50%;
-          height: 450px;
+          height: 400px;
           -webkit-transform: translateX(-50%);
                   transform: translateX(-50%);
 
@@ -363,12 +364,12 @@ footer {
               height: auto;
               width: 8%;
               left: 50%;
-              top:205px;
+              top:187px;
             }
             #reservation-info{
-              font-size: 0.9em;
-              width: 118px;
-              top: 255px;
+              font-size: 0.8em;
+              width: 90px;
+              top: 240px;
               left: 50%;
               -webkit-transform: translateX(-50%);
                       transform: translateX(-50%);
@@ -377,20 +378,20 @@ footer {
         }
       }
       .hands-up{
-        height: 450px;
+        height: 350px;
         .container{
-          height: 450px;
+          height: 350px;
           .row{
             img{
               width: 100%;
-              margin-top:175px;
+              margin-top:110px;
             }
           }
         }
       }
       footer{
         height: 410px;
-        background-size: auto 450px;
+        background-size: auto 490px;
         .container{
           .row{
             img{
