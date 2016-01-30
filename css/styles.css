@@ -456,7 +456,9 @@ footer {
 
   footer {
     background-position: top;
-    background-size: auto 120%; } }
+    background-size: auto 120%; }
+    footer .container .row {
+      margin-top: -340px; } }
 /* Large Devices, Wide Screens */
 
 /*# sourceMappingURL=styles.css.map */

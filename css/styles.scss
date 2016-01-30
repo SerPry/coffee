@@ -696,6 +696,11 @@ footer {
       footer{
         background-position: top;
         background-size: auto 120%;
+        .container{
+            .row{
+                margin-top: -340px;
+            }
+        }
       }
    }
 
