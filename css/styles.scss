@@ -34,7 +34,7 @@ header {
   //   background: url(../svg/bricks-1.svg);
   //   font-size: 2em;
     [class*="col-"] {
-      margin-top: 2%;
+    //   margin-top: 2%;
     }
     a {
       // display: block;
@@ -222,24 +222,6 @@ header {
     img {
       width: 100%;
     }
-    .col-md-7 {
-      img {
-        margin-top: 50%;
-      }
-    }
-    .col-md-3 {
-      img {
-        margin-top: 24%;
-        margin-left: 47%;
-      }
-    }
-    .col-md-2 {
-      img {
-        width: 120%;
-        margin-top: 230%;
-        margin-left: -115%;
-      }
-    }
   }
 }
 /*  end of hands-up*/
@@ -298,9 +280,25 @@ footer {
      header{
        #main-navbar{
            background-repeat: repeat;
+           max-height: 50px;
            li{
                font-size: 1em;
+               width: 100%;
             //    background-color: #eee;
+            border-bottom: 1px solid #eee;
+            a{
+                margin: 5px;
+            }
+           }
+           #main-list{
+               position: absolute;
+               z-index: 20;
+               background-color: white;
+               width: 100%;
+               margin: 0;
+           }
+           #ft-menu, #sd-menu{
+               display: none;
            }
 
        }
@@ -380,11 +378,14 @@ footer {
       .hands-up{
         height: 350px;
         .container{
-          height: 350px;
+        //   height: 350px;
           .row{
             img{
-              width: 100%;
-              margin-top:110px;
+            //   width: 100%;
+            //   margin-top:110px;
+            position: absolute;
+            width: 90%;
+            bottom: 5px;
             }
           }
         }
@@ -419,14 +420,24 @@ footer {
       .gradient{
         background-size: 10%;
       }
-      #main-navbar li{
+      #main-navbar{
+          max-height: 75px;
+       li{
           width: 115px;
           font-size: 1em;
+          border: none;
           margin-top: 6px;
           a{
               margin-top: 0;
           }
       }
+    #ft-menu, #sd-menu{
+        display: block;
+    }
+    #main-list{
+        display: none;
+    }
+}
     }
     #static{
       right: -5%;
@@ -469,11 +480,12 @@ footer {
       }
       .hands-up{
         height: 650px;
-        #hands-middle{
-          margin-top: 15%;
-        }
-        img{
-          margin-top: 15%;
+        .container{
+            .row{
+                img{
+                    width: 95%;
+                }
+            }
         }
       }
       footer{
@@ -553,10 +565,13 @@ footer {
    /* Medium Devices, Desktops */
    @media only screen and (min-width : 992px) {
       header{
-          #main-navbar li{
+          #main-navbar{
+              max-height: 125px;
+           li{
               font-size: 2em;
              width: 250px;
              margin-top: 40px;
+          }
           }
         .divider-1 {
           height: 35px;
@@ -663,17 +678,18 @@ footer {
       .hands-up{
         height: 830px;
         #hands-middle{
-          margin-top: 50%;
+        //   margin-top: 50%;
         }
         .container{
           .row{
-            img{
-              margin-top: 20%;
-            &#hands-right{
-              margin-top: 315px;
-            }
-            }
-
+                #hands-left{
+                    bottom:80px;
+                    left: 110px;
+                }
+                #hands-right{
+                    bottom: 200px;
+                    right: 170px;
+                }
           }
         }
       }

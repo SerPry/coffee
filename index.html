@@ -31,15 +31,23 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav nav-menu" id="ft-menu">
         <li class="work" ><a href="#">About us <span class="sr-only">(current)</span></a></li>
         <li class='work'><a href="#">Menu</a></li>
 
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right nav-menu" id="sd-menu">
         <li class='work'><a href="#">Novelties</a></li>
         <li class='work'><a href="#">Contact</a></li>
       </ul>
+      <ul class="nav navbar-nav nav-menu" id="main-list">
+          <li class="work"><a href="#">About us</a></li>
+          <li class="work"><a href="#">Menu</a></li>
+          <li class="work"><a href="#">Novelties</a></li>
+          <li class="work"><a href="#">Contact</a></li>
+
+      </ul>
+
           <img  src="svg/logo.svg" class="logo hidden-xs">
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -69,7 +77,7 @@
 
                 <section  class="content-menu">
                     <div class="container main_container" id="scene">
-                    <img src="img/moon.png" class="hidden-xs hidden-sm layer" data-depth="0.40" alt="" />
+                    <img src="img/moon.png" class="hidden-xs hidden-sm layer" data-depth="0.10" alt="" />
                     <img src="img/stars.png" class="layer" data-depth="0.60" alt="" />
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -106,11 +114,11 @@
                 </div>
             </section>
             <section class = "hands-up">
-                <div class="container main_container">
-                    <div class="row">
-                        <div class="col-md-3 hidden-sm hidden-xs"> <img src="svg/heart.svg" alt="" /></div>
-                        <div class="col-md-7 col-sm-12 col-xs-12"> <img src="svg/hands-middle.svg" id="hands-middle" alt="" /></div>
-                        <div class="col-md-2 hidden-sm hidden-xs"> <img src="svg/hands-right.svg" alt="" id="hands-right"/></div>
+                <div class="container main_container fullHeight">
+                    <div class="row fullHeight">
+                        <div class="col-md-3 hidden-sm hidden-xs fullHeight"> <img src="svg/heart.svg" id="hands-left" alt="" /></div>
+                        <div class="col-md-7 col-sm-12 col-xs-12 fullHeight"> <img src="svg/hands-middle.svg" id="hands-middle" alt="" /></div>
+                        <div class="col-md-2 hidden-sm hidden-xs fullHeight"> <img src="svg/hands-right.svg" alt="" id="hands-right"/></div>
                     </div>
                 </div>
             </section>

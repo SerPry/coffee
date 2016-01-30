@@ -15,8 +15,6 @@ header #main-navbar {
     font-size: 2em;
     width: 200px;
     text-align: center; }
-header nav [class*="col-"] {
-  margin-top: 2%; }
 header nav a {
   margin-top: 10%;
   color: black; }
@@ -154,15 +152,6 @@ header .gradient {
   background: url(../img/hands-up-bg.png); }
   .hands-up .row img {
     width: 100%; }
-  .hands-up .row .col-md-7 img {
-    margin-top: 50%; }
-  .hands-up .row .col-md-3 img {
-    margin-top: 24%;
-    margin-left: 47%; }
-  .hands-up .row .col-md-2 img {
-    width: 120%;
-    margin-top: 230%;
-    margin-left: -115%; }
 
 /*  end of hands-up*/
 footer {
@@ -200,9 +189,22 @@ footer {
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
   header #main-navbar {
-    background-repeat: repeat; }
+    background-repeat: repeat;
+    max-height: 50px; }
     header #main-navbar li {
-      font-size: 1em; }
+      font-size: 1em;
+      width: 100%;
+      border-bottom: 1px solid #eee; }
+      header #main-navbar li a {
+        margin: 5px; }
+    header #main-navbar #main-list {
+      position: absolute;
+      z-index: 20;
+      background-color: white;
+      width: 100%;
+      margin: 0; }
+    header #main-navbar #ft-menu, header #main-navbar #sd-menu {
+      display: none; }
   header .divider-1 {
     height: 10px; }
   header .gradient {
@@ -261,11 +263,10 @@ footer {
 
   .hands-up {
     height: 350px; }
-    .hands-up .container {
-      height: 350px; }
-      .hands-up .container .row img {
-        width: 100%;
-        margin-top: 110px; }
+    .hands-up .container .row img {
+      position: absolute;
+      width: 90%;
+      bottom: 5px; }
 
   footer {
     height: 410px;
@@ -283,12 +284,19 @@ footer {
 
   header .gradient {
     background-size: 10%; }
-  header #main-navbar li {
-    width: 115px;
-    font-size: 1em;
-    margin-top: 6px; }
-    header #main-navbar li a {
-      margin-top: 0; }
+  header #main-navbar {
+    max-height: 75px; }
+    header #main-navbar li {
+      width: 115px;
+      font-size: 1em;
+      border: none;
+      margin-top: 6px; }
+      header #main-navbar li a {
+        margin-top: 0; }
+    header #main-navbar #ft-menu, header #main-navbar #sd-menu {
+      display: block; }
+    header #main-navbar #main-list {
+      display: none; }
 
   #static {
     right: -5%; }
@@ -319,10 +327,8 @@ footer {
 
   .hands-up {
     height: 650px; }
-    .hands-up #hands-middle {
-      margin-top: 15%; }
-    .hands-up img {
-      margin-top: 15%; }
+    .hands-up .container .row img {
+      width: 95%; }
 
   footer {
     background-size: auto 755px;
@@ -368,10 +374,12 @@ footer {
     top: 360px; } }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
-  header #main-navbar li {
-    font-size: 2em;
-    width: 250px;
-    margin-top: 40px; }
+  header #main-navbar {
+    max-height: 125px; }
+    header #main-navbar li {
+      font-size: 2em;
+      width: 250px;
+      margin-top: 40px; }
   header .divider-1 {
     height: 35px;
     width: 100%;
@@ -439,12 +447,12 @@ footer {
 
   .hands-up {
     height: 830px; }
-    .hands-up #hands-middle {
-      margin-top: 50%; }
-    .hands-up .container .row img {
-      margin-top: 20%; }
-      .hands-up .container .row img#hands-right {
-        margin-top: 315px; }
+    .hands-up .container .row #hands-left {
+      bottom: 80px;
+      left: 110px; }
+    .hands-up .container .row #hands-right {
+      bottom: 200px;
+      right: 170px; }
 
   footer {
     background-position: top;
