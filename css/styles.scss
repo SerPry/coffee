@@ -12,7 +12,7 @@ $color3: rgb(35, 34, 37);
 }
 header {
     .pre_nav{
-        // height: 100px;
+        /* height: 100px;*/
 
     }
     #main-navbar{
@@ -28,16 +28,16 @@ header {
 
 
   nav {
-  //   position: relative;
-  //   text-align: center;
-  //   height: 186px;
-  //   background: url(../svg/bricks-1.svg);
-  //   font-size: 2em;
+  /*   position: relative;*/
+  /*   text-align: center;*/
+  /*   height: 186px;*/
+  /*   background: url(../svg/bricks-1.svg);*/
+  /*   font-size: 2em;*/
     [class*="col-"] {
-    //   margin-top: 2%;
+    /*   margin-top: 2%;*/
     }
     a {
-      // display: block;
+      /* display: block;*/
       margin-top: 10%;
       color: black;
     }
@@ -180,10 +180,10 @@ header {
   background: url("../svg/res_back.svg") ;
   .container {
     .row {
-    //   [class*='col-'] {
-    //     // height: 1200px;
-    //     padding: 0;
-    //   }
+    /*   [class*='col-'] {*/
+    /*     // height: 1200px;*/
+    /*     padding: 0;*/
+    /*   }*/
       img {
         position: absolute;
       }
@@ -192,7 +192,7 @@ header {
         width: 85%;
         top: -3.5%;
         &:first-of-type {
-          // left: 7.5%;
+          /* left: 7.5%;*/
         }
       }
       .col-md-6 {
@@ -254,16 +254,16 @@ footer {
       }
       img[src^='svg/footer-3'] {
         width: 85%;
-        // margin-top: 119%;
+        /* margin-top: 119%;*/
       }
       img[src^='svg/footer-1'] {
-        // margin-top: 119%;
+        /* margin-top: 119%;*/
       }
       img[src^='svg/footer-2'] {
-        // margin-top: 92%;
+        /* margin-top: 92%;*/
       }
       img[src^='svg/footer-4'] {
-        // margin-top: 201%;
+        /* margin-top: 201%;*/
         margin-left: -5%;
       }
     }
@@ -284,7 +284,7 @@ footer {
            li{
                font-size: 1em;
                width: 100%;
-            //    background-color: #eee;
+            /*    background-color: #eee;*/
             border-bottom: 1px solid #eee;
             a{
                 margin: 5px;
@@ -378,11 +378,11 @@ footer {
       .hands-up{
         height: 350px;
         .container{
-        //   height: 350px;
+        /*   height: 350px;*/
           .row{
             img{
-            //   width: 100%;
-            //   margin-top:110px;
+            /*   width: 100%;*/
+            /*   margin-top:110px;*/
             position: absolute;
             width: 90%;
             bottom: 5px;
@@ -407,6 +407,40 @@ footer {
 
    /* Extra Small Devices, Phones */
    @media only screen and (min-width : 480px) {
+       .reservation{
+           .container{
+               .row{
+                   #flower{
+                       width: 35px;
+                       top:170px;
+                   }
+               }
+           }
+       }
+       .hands-up{
+           .container{
+               .row{
+                   img{
+                       width: 450px;
+                       left: 50%;
+                       -webkit-transform: translateX(-50%);
+                               transform: translateX(-50%);
+                   }
+               }
+           }
+       }
+       footer{
+           .container{
+               .row{
+                   img{
+                       width: 300px;
+                       left: 50%;
+                       -webkit-transform: translateX(-50%);
+                               transform: translateX(-50%);
+                   }
+               }
+           }
+       }
 
    }
 
@@ -490,12 +524,13 @@ footer {
       }
       footer{
         background-size: auto 755px;
-        // background-position: right;
+        /* background-position: right;*/
         height: 640px;
         .container{
           .row{
             img{
               bottom: 120px;
+              width: 90%;
             }
           }
         }
@@ -554,6 +589,7 @@ footer {
         }
         #flower{
           top:360px;
+          width: 8%;
         }
       }
     }
@@ -678,7 +714,7 @@ footer {
       .hands-up{
         height: 830px;
         #hands-middle{
-        //   margin-top: 50%;
+        /*   margin-top: 50%;*/
         }
         .container{
           .row{

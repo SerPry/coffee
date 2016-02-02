@@ -8,6 +8,8 @@
 .fullHeight {
   height: 100%; }
 
+header .pre_nav {
+  /* height: 100px;*/ }
 header #main-navbar {
   background: url("../svg/bricks.svg");
   margin-bottom: 0; }
@@ -15,18 +17,27 @@ header #main-navbar {
     font-size: 2em;
     width: 200px;
     text-align: center; }
-header nav a {
-  margin-top: 10%;
-  color: black; }
-header nav .logo {
-  position: absolute;
-  top: 0;
-  width: 210px;
-  z-index: 4;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-      transform: translateX(-50%); }
+header nav {
+  /*   position: relative;*/
+  /*   text-align: center;*/
+  /*   height: 186px;*/
+  /*   background: url(../svg/bricks-1.svg);*/
+  /*   font-size: 2em;*/ }
+  header nav [class*="col-"] {
+    /*   margin-top: 2%;*/ }
+  header nav a {
+    /* display: block;*/
+    margin-top: 10%;
+    color: black; }
+  header nav .logo {
+    position: absolute;
+    top: 0;
+    width: 210px;
+    z-index: 4;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%); }
 header .divider-1 {
   height: 35px;
   width: 100%;
@@ -127,24 +138,31 @@ header .gradient {
 .reservation {
   background-color: #90B4B7;
   background: url("../svg/res_back.svg"); }
-  .reservation .container .row img {
-    position: absolute; }
-  .reservation .container .row .windows {
-    height: 100%;
-    width: 85%;
-    top: -3.5%; }
-  .reservation .container .row .col-md-6 p {
-    color: red;
-    font-size: 2.5em;
-    position: absolute;
-    text-transform: uppercase;
-    width: 255px;
-    text-align: center;
-    top: 56%;
-    left: 30%; }
-  .reservation .container .row .col-md-6 img:not(.sceen) {
-    top: 47.5%;
-    left: 43%; }
+  .reservation .container .row {
+    /*   [class*='col-'] {*/
+    /*     // height: 1200px;*/
+    /*     padding: 0;*/
+    /*   }*/ }
+    .reservation .container .row img {
+      position: absolute; }
+    .reservation .container .row .windows {
+      height: 100%;
+      width: 85%;
+      top: -3.5%; }
+      .reservation .container .row .windows:first-of-type {
+        /* left: 7.5%;*/ }
+    .reservation .container .row .col-md-6 p {
+      color: red;
+      font-size: 2.5em;
+      position: absolute;
+      text-transform: uppercase;
+      width: 255px;
+      text-align: center;
+      top: 56%;
+      left: 30%; }
+    .reservation .container .row .col-md-6 img:not(.sceen) {
+      top: 47.5%;
+      left: 43%; }
 
 /*end of reservation*/
 .hands-up {
@@ -179,8 +197,14 @@ footer {
         position: absolute;
         bottom: 95px; }
       footer .container .row img[src^='svg/footer-3'] {
-        width: 85%; }
+        width: 85%
+        /* margin-top: 119%;*/ }
+      footer .container .row img[src^='svg/footer-1'] {
+        /* margin-top: 119%;*/ }
+      footer .container .row img[src^='svg/footer-2'] {
+        /* margin-top: 92%;*/ }
       footer .container .row img[src^='svg/footer-4'] {
+        /* margin-top: 201%;*/
         margin-left: -5%; }
 
 /*end of footer*/
@@ -194,6 +218,7 @@ footer {
     header #main-navbar li {
       font-size: 1em;
       width: 100%;
+      /*    background-color: #eee;*/
       border-bottom: 1px solid #eee; }
       header #main-navbar li a {
         margin: 5px; }
@@ -263,10 +288,14 @@ footer {
 
   .hands-up {
     height: 350px; }
-    .hands-up .container .row img {
-      position: absolute;
-      width: 90%;
-      bottom: 5px; }
+    .hands-up .container {
+      /*   height: 350px;*/ }
+      .hands-up .container .row img {
+        /*   width: 100%;*/
+        /*   margin-top:110px;*/
+        position: absolute;
+        width: 90%;
+        bottom: 5px; }
 
   footer {
     height: 410px;
@@ -276,6 +305,24 @@ footer {
       left: 5%;
       bottom: 65px; } }
 /* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  .reservation .container .row #flower {
+    width: 35px;
+    top: 170px; }
+
+  .hands-up .container .row img {
+    width: 450px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%); }
+
+  footer .container .row img {
+    width: 300px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%); } }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .content-menu {
@@ -332,9 +379,11 @@ footer {
 
   footer {
     background-size: auto 755px;
+    /* background-position: right;*/
     height: 640px; }
     footer .container .row img {
-      bottom: 120px; }
+      bottom: 120px;
+      width: 90%; }
 
   .obj-zone .container .working-Status {
     top: 43%;
@@ -371,7 +420,8 @@ footer {
     width: 185px;
     top: 480px; }
   .reservation .container .row #flower {
-    top: 360px; } }
+    top: 360px;
+    width: 8%; } }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   header #main-navbar {
@@ -447,6 +497,8 @@ footer {
 
   .hands-up {
     height: 830px; }
+    .hands-up #hands-middle {
+      /*   margin-top: 50%;*/ }
     .hands-up .container .row #hands-left {
       bottom: 80px;
       left: 110px; }
