@@ -232,6 +232,12 @@ footer {
   overflow: hidden;
   height: 755px;
   width: 100%;
+  .footer-img{
+      overflow-x: visible;
+      #ballon{
+          height: 330px;
+      }
+  }
   .container {
     overflow: hidden;
     height: 100%;
@@ -735,6 +741,9 @@ footer {
         .container{
             .row{
                 margin-top: -340px;
+                img{
+                    bottom:95px;
+                }
             }
         }
       }

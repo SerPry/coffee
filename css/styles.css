@@ -179,6 +179,10 @@ footer {
   overflow: hidden;
   height: 755px;
   width: 100%; }
+  footer .footer-img {
+    overflow-x: visible; }
+    footer .footer-img #ballon {
+      height: 330px; }
   footer .container {
     overflow: hidden;
     height: 100%; }
@@ -510,7 +514,9 @@ footer {
     background-position: top;
     background-size: auto 120%; }
     footer .container .row {
-      margin-top: -340px; } }
+      margin-top: -340px; }
+      footer .container .row img {
+        bottom: 95px; } }
 /* Large Devices, Wide Screens */
 
 /*# sourceMappingURL=styles.css.map */
