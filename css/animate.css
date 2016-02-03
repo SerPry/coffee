@@ -1047,8 +1047,8 @@ animation-duration: .75s;
     }
     to {
         opacity: 1;
-        -webkit-transform: scale(0.85);
-        transform: scale(0.85);
+        /*-webkit-transform: scale(0.85);
+        transform: scale(0.85);*/
     }
 }
 @keyframes fadeInLeft {
@@ -1059,8 +1059,8 @@ animation-duration: .75s;
     }
     to {
         opacity: 1;
-        -webkit-transform: scale(0.85);
-        transform: scale(0.85);
+        /*-webkit-transform: scale(0.85);
+        transform: scale(0.85);*/
     }
 }
 .fadeInLeft {

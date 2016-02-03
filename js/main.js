@@ -1,3 +1,4 @@
+'use strict';
 (function() {
     $('header nav .row').find('a').click(function() {
         var $place = "#" + $(this).data('link');
@@ -5,7 +6,7 @@
         $.scrollTo($place, 500);
     });
     /************************** Animations ********************************************/
-    $('.openStatus')
+    $('.working-Status')
         .waypoint(function(dir) {
             if (dir === 'down') {
                 $(this)
@@ -91,25 +92,6 @@
         .waypoint(function(dir) {
             if (dir === 'down') {
                 $(this)
-                    .addClass('fadeInRight ')
-                    .removeClass('fadeOutRight');
-            }
-        }, {
-            offset: '70%'
-        })
-        .waypoint(function(dir) {
-            if (dir === 'up') {
-                $(this)
-                    .removeClass('fadeInRight ')
-                    .addClass('fadeOutRight');
-            }
-        }, {
-            offset: -100
-        });
-    $('.flowerpot').first().next()
-        .waypoint(function(dir) {
-            if (dir === 'down') {
-                $(this)
                     .addClass('fadeInLeft ')
                     .removeClass('fadeOutLeft');
             }
@@ -123,9 +105,28 @@
                     .addClass('fadeOutLeft');
             }
         }, {
+            offset: -100
+        });
+    $('.flowerpot').eq(1)
+        .waypoint(function(dir) {
+            if (dir === 'down') {
+                $(this)
+                    .addClass('fadeInRight ')
+                    .removeClass('fadeOutRight');
+            }
+        }, {
+            offset: '70%'
+        })
+        .waypoint(function(dir) {
+            if (dir === 'up') {
+                $(this)
+                    .removeClass('fadeInRight ')
+                    .addClass('fadeOutRight');
+            }
+        }, {
             offset: -50
         });
-    $('.hands-up').find('img')
+    $('.hands-all')
         .waypoint(function(dir) {
             if (dir === 'down') {
                 $(this)

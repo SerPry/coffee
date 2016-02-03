@@ -697,6 +697,14 @@ footer {
               img{
                   height: 1000px;
               }
+              .flowerpot{
+                  height: 450px;
+                  position: absolute;
+                  bottom: 70px;
+              }
+              .flowerpot-last{
+                  left: 20px;
+              }
               .windows{
                   height: 90%;
               }
@@ -724,11 +732,11 @@ footer {
           .row{
                 #hands-left{
                     bottom:80px;
-                    left: 110px;
+                    left: 210px;
                 }
                 #hands-right{
                     bottom: 200px;
-                    right: 170px;
+                    left:  -90px;
                 }
           }
         }

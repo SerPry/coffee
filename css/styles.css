@@ -487,6 +487,12 @@ footer {
       width: 85%; }
     .reservation .container .row img {
       height: 1000px; }
+    .reservation .container .row .flowerpot {
+      height: 450px;
+      position: absolute;
+      bottom: 70px; }
+    .reservation .container .row .flowerpot-last {
+      left: 20px; }
     .reservation .container .row .windows {
       height: 90%; }
     .reservation .container .row [class*='col-'] {
@@ -505,10 +511,10 @@ footer {
       /*   margin-top: 50%;*/ }
     .hands-up .container .row #hands-left {
       bottom: 80px;
-      left: 110px; }
+      left: 210px; }
     .hands-up .container .row #hands-right {
       bottom: 200px;
-      right: 170px; }
+      left: -90px; }
 
   footer {
     background-position: top;
