@@ -518,5 +518,18 @@ footer {
       footer .container .row img {
         bottom: 95px; } }
 /* Large Devices, Wide Screens */
+/* Tablet landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  header #main-navbar li {
+    width: 200px; }
+
+  .obj-zone .container .row .zone-2 {
+    background-position: center 225%; }
+
+  .reservation .container .row #reservation-info {
+    font-size: 1.6em; }
+
+  .hands-up {
+    height: 625px; } }
 
 /*# sourceMappingURL=styles.css.map */
