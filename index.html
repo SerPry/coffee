@@ -19,7 +19,7 @@
         <header>
             <div class="pre_nav">
             <nav class="navbar navbar-default " id='main-navbar'>
-  <div class="container-fluid">
+  <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -61,7 +61,10 @@
             <section class="obj-zone">
               <div class="divider-2"></div>
                 <div class="container main_container">
-                    <p class='working-Status animated'>Open</p>
+                    <div class="card  backface ">
+                        <div class="back  animated" id="back"></div>
+                        <div class="front animated" id="front"></div>
+                    </div>
                     <img src="svg/chair.svg" class="items animated hidden-sm hidden-xs" alt="" />
                     <img src="svg/table.svg" class="items animated hidden-sm hidden-xs" alt="" />
                     <img src="svg/chair.svg" class="items animated hidden-sm hidden-xs" alt="" />
@@ -79,8 +82,8 @@
 
                 <section  class="content-menu">
                     <div class="container main_container" id="scene">
-                    <img src="img/moon.png" class="hidden-xs hidden-sm layer" data-depth="0.1" alt="" />
-                    <img src="img/stars.png" class="layer" data-depth="0.60" alt="" />
+                    <img src="img/moon.png"  class="hidden-xs hidden-sm layer" id="moon" data-depth="0.1" alt="" />
+                    <img src="img/stars.png" class="layer" data-depth="0.30" alt="" />
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <ul class="ft" id="ft">

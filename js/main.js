@@ -6,31 +6,46 @@
         $.scrollTo($place, 500);
     });
     /************************** Animations ********************************************/
-    $('.working-Status')
-        .waypoint(function(dir) {
-            if (dir === 'down') {
+    $('#front')
+        .waypoint(function(dir){
+            if (dir === "down"){
                 $(this)
-                    .removeClass('fadeInRight')
-                    .addClass('fadeOutLeft')
-                    .text('About us')
-                    .removeClass('fadeOutLeft')
-                    .addClass('fadeInLeft');
+                    .removeClass('rotateIn')
+                    .addClass('rotateOut');
             }
-        }, {
-            offset: '50%'
+        },{
+            offset:"35%"
         })
-        .waypoint(function(dir) {
-            if (dir === 'up') {
+        .waypoint(function(dir){
+            if (dir === 'up'){
                 $(this)
-                    .removeClass('fadeOutLeft')
-                    .addClass('fadeOutRight')
-                    .text('Open')
-                    .removeClass('fadeOutRight')
-                    .addClass('fadeInRight');
+                    .removeClass("rotateOut")
+                    .addClass("rotateIn");
             }
-        }, {
-            offset: -50
+        },{
+            offset:90
         });
+
+        $('#back')
+            .waypoint(function(dir){
+                if (dir === "down"){
+                    $(this)
+                        .removeClass('rotateOut')
+                        .addClass('rotateIn');
+                }
+            },{
+                offset:"35%"
+            })
+            .waypoint(function(dir){
+                if (dir === 'up'){
+                    $(this)
+                        .removeClass("rotateIn")
+                        .addClass("rotateOut");
+                }
+            },{
+                offset:90
+            });
+
     $('.animation-zone').children('.first-part')
         .waypoint(function(dir) {
             if (dir === "down") {

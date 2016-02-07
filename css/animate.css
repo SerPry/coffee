@@ -2778,3 +2778,44 @@ animation-duration: .75s;
     -webkit-animation-name: slideOutUp;
     animation-name: slideOutUp;
 }
+
+@-webkit-keyframes rotateIn {
+    from {
+        transform:rotate3D(0,1,0,180deg);
+    }
+    to {
+        transform:rotate3D(0,1,0,0deg);
+    }
+}
+@keyframes rotateIn {
+    from {
+        transform:rotate3D(0,1,0,180deg);
+    }
+    to {
+        transform:rotate3D(0,1,0,0deg);
+    }
+}
+.rotateIn {
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+}
+@-webkit-keyframes rotateOut {
+    from {
+        transform:rotate3D(0,1,0,0deg);
+    }
+    to {
+        transform:rotate3D(0,1,0,1800deg);
+    }
+}
+@keyframes rotateOut {
+    from {
+        transform:rotate3D(0,1,0,0deg);
+    }
+    to {
+        transform:rotate3D(0,1,0,180deg);
+    }
+}
+.rotateOut {
+    -webkit-animation-name: rotateOut;
+    animation-name: rotateOut;
+}

@@ -75,13 +75,43 @@ header {
     background: url("../svg/divider-2-1-01-01.svg");
   }
   .container {
-    .working-Status {
-      position: absolute;
-      font-size: 2.2em;
-      z-index: 10;
-      top: 38%;
-      left: 46%;
-    }
+      .card {
+          -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d; /* дочерние элементы должны отображаться в 3D пространстве */
+              position: absolute;
+              z-index: 20;
+              top:38%;
+              left:50%;
+              transform: translateX(-50%);
+              height:115px;
+              width: 173px;
+          }
+          .backface .back, .backface .front {
+           -moz-backface-visibility: hidden;
+           -webkit-backface-visibility: hidden;
+           backface-visibility: hidden; /* определяет будет ли видно контент элемента, который с помощью 3d трансформаций отвернут лицом от пользователя */
+       }
+       .front,.back{
+           width: 100px;
+           height: 50px;
+           position: absolute;
+        //    background: url('../svg/plate-about.svg') no-repeat ;
+           z-index: 20;
+           width: 202px;
+           height: 113px;
+       }
+       .front{
+           background: url('../img/plate-open.png') no-repeat;
+           background-size: contain;
+
+       }
+       .back{
+           background: url('../img/plate-about.png') no-repeat;
+           background-size: contain;
+
+        //    z-index: 30;
+        transform:rotate3d(0,1,0,180deg);
+       }
     .items {
       position: absolute;
       top: 49%;
@@ -318,14 +348,11 @@ footer {
      }
      .obj-zone{
        .divider-2{
-         height: 75px;
+         height: 60px;
        }
        .container{
-         .working-Status{
-           top:35%;
-           left:50%;
-           -webkit-transform: translateX(-50%);
-                   transform: translateX(-50%);
+         .card{
+             top:16%;
          }
          .row{
            .zone-2{
@@ -399,6 +426,7 @@ footer {
       footer{
         height: 410px;
         background-size: auto 490px;
+        background-position: 100% 35px;
         .container{
           .row{
             img{
@@ -529,8 +557,8 @@ footer {
         }
       }
       footer{
-        background-size: auto 755px;
-        /* background-position: right;*/
+        background-size: auto 760px;
+         background-position: 100% 50px;
         height: 640px;
         .container{
           .row{
@@ -543,10 +571,12 @@ footer {
       }
 
       .obj-zone{
+          .divider-2{
+              height: 110px;
+          }
         .container{
-            .working-Status{
-                top:43%;
-                left: 51%;
+            .card{
+                top:27.5%;
             }
           .row {
             [class*='zone-'] {
@@ -570,7 +600,7 @@ footer {
             }
             .zone-2 {
               background: url("../svg/1Scroll_door.svg") no-repeat;
-              background-position: 0 225%;
+              background-position: 0 102%;
 
         }
       }
@@ -663,13 +693,15 @@ footer {
       }
       .obj-zone{
         .container{
-          .working-Status{
-            top:43%;
-            left: 50%;
-          }
+            .card{
+                top:25%;
+            }
       }
   }
   .content-menu{
+      #moon{
+          margin-top: 20px;
+      }
       #ft,#sd{
           li{
               font-size:3em;
@@ -742,8 +774,8 @@ footer {
         }
       }
       footer{
-        background-position: top;
-        background-size: auto 120%;
+        background-position: -450px 50px;
+        background-size: auto 123%;
         .container{
             .row{
                 margin-top: -340px;
@@ -757,6 +789,9 @@ footer {
 
    /* Large Devices, Wide Screens */
    @media only screen and (min-width : 1200px) {
+       footer{
+           background-position: -80px 50px
+       }
 
    }
    /* Tablet landscape */
@@ -765,7 +800,7 @@ footer {
            width: 200px;
        }
        .obj-zone .container .row .zone-2{
-           background-position: center 225%;
+           background-position: center 100%;
        }
        .reservation .container .row #reservation-info{
            font-size: 1.6em;
