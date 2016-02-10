@@ -84,12 +84,12 @@
         }, {
             offset: -400
         });
-    $('.flower')
+    $('#flower')
         .waypoint(function(dir) {
             if (dir === 'down') {
                 $(this)
-                    .removeClass('pulseBack')
-                    .addClass('pulse');
+                    .removeClass('fadeOutDown')
+                    .addClass('fadeInDown');
             }
         }, {
             offset: '70%'
@@ -97,8 +97,8 @@
         .waypoint(function(dir) {
             if (dir === 'up') {
                 $(this)
-                    .removeClass('pulse')
-                    .addClass('pulseBack');
+                    .removeClass('fadeInDown')
+                    .addClass('fadeOutDown');
             }
         }, {
             offset: -100

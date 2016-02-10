@@ -328,7 +328,7 @@ footer {
            }
            #main-list{
                position: absolute;
-               z-index: 20;
+               z-index: 50;
                background-color: white;
                width: 100%;
                margin: 0;
@@ -395,7 +395,7 @@ footer {
               height: auto;
               width: 8%;
               left: 50%;
-              top:187px;
+              top:-190px;
             }
             #reservation-info{
               font-size: 0.8em;
@@ -624,7 +624,7 @@ footer {
           top:480px;
         }
         #flower{
-          top:360px;
+          top:-20px;
           width: 8%;
         }
       }
@@ -750,7 +750,7 @@ footer {
             }
             #flower{
               width: 10%;
-              top: 48%;
+              top: 10%;
             }
           }
         }
