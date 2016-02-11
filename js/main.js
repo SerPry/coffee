@@ -1,6 +1,6 @@
 'use strict';
 (function() {
-    $('header nav .row').find('a').click(function() {
+    $('header nav ').find('a').click(function() {
         var $place = "#" + $(this).data('link');
         console.log($place);
         $.scrollTo($place, 500);

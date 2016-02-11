@@ -34,19 +34,19 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav nav-menu" id="ft-menu">
-        <li class="work" ><a href="#">About us <span class="sr-only">(current)</span></a></li>
-        <li class='work'><a href="#">Menu</a></li>
+        <li class="work" ><a href="#" data-link="about-place">About us <span class="sr-only">(current)</span></a></li>
+        <li class='work'><a href="#" data-link="menu-place">Menu</a></li>
 
       </ul>
       <ul class="nav navbar-nav navbar-right nav-menu" id="sd-menu">
-        <li class='work'><a href="#">Novelties</a></li>
-        <li class='work'><a href="#">Contact</a></li>
+        <li class='work'><a href="#" data-link="hands-place">Novelties</a></li>
+        <li class='work'><a href="#" data-link="reservation-place">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav nav-menu" id="main-list">
-          <li class="work"><a href="#">About us</a></li>
-          <li class="work"><a href="#">Menu</a></li>
-          <li class="work"><a href="#">Novelties</a></li>
-          <li class="work"><a href="#">Contact</a></li>
+          <li class="work"><a href="#" data-link="about-place">About us</a></li>
+          <li class="work"><a href="#" data-link="menu-place">Menu</a></li>
+          <li class="work"><a href="#" data-link="hands-place">Novelties</a></li>
+          <li class="work"><a href="#" data-link="reservation-place">Contact</a></li>
 
       </ul>
 
@@ -58,7 +58,7 @@
             <section class="divider-1"></section>
             <section class="gradient"></section>
         </header>
-            <section class="obj-zone">
+            <section class="obj-zone" id="about-place">
               <div class="divider-2"></div>
                 <div class="container main_container">
                     <div class="card  backface ">
@@ -82,7 +82,7 @@
             </section>
             <section class='floor'></section>
 
-                <section  class="content-menu">
+                <section  class="content-menu" id="menu-place">
                     <div class="container main_container" id="scene">
                     <img src="img/moon.png"  class="hidden-xs hidden-sm layer" id="moon" data-depth="0.1" alt="" />
                     <img src="img/stars.png" class="layer" data-depth="0.30" alt="" />
@@ -108,7 +108,7 @@
                     </div>
                 </div>
             </section>
-            <section class="reservation">
+            <section class="reservation" id='reservation-place'>
                 <div class="container main_container">
                     <div class="row">
                         <div class="col-md-3 hidden-sm hidden-xs">
@@ -126,7 +126,7 @@
                     </div>
                 </div>
             </section>
-            <section class = "hands-up">
+            <section class = "hands-up" id="hands-place">
                 <div class="container main_container fullHeight">
                     <div class="row fullHeight">
                         <div class="col-md-3 hidden-sm hidden-xs fullHeight "> <img class=' hands-all animated hideOp' src="svg/heart.svg" id="hands-left" alt="" /></div>
@@ -135,7 +135,7 @@
                     </div>
                 </div>
             </section>
-            <footer >
+            <footer id="footer-place">
                 <div class="footer-img" id="scene-2">
                     <img src="img/airHotBalloon.png" class='stuff hidden-xs hidden-sm layer ' data-depth="0.10" alt=""  id='ballon'/>
                     <img src="img/eggs.png" class='stuff hidden-xs layer ' data-depth="0.40" alt="" />
