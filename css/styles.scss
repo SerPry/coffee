@@ -36,6 +36,9 @@ header {
   /*   height: 186px;*/
   /*   background: url(../svg/bricks-1.svg);*/
   /*   font-size: 2em;*/
+  >.container{
+      overflow-y: visible;
+  }
     [class*="col-"] {
     /*   margin-top: 2%;*/
     }

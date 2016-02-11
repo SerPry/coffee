@@ -27,6 +27,8 @@ header nav {
   /*   height: 186px;*/
   /*   background: url(../svg/bricks-1.svg);*/
   /*   font-size: 2em;*/ }
+  header nav > .container {
+    overflow-y: visible; }
   header nav [class*="col-"] {
     /*   margin-top: 2%;*/ }
   header nav a {
