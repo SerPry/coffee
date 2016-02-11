@@ -9,6 +9,9 @@
 .fullHeight {
   height: 100%; }
 
+.hideOp {
+  opacity: 0; }
+
 header .pre_nav {
   /* height: 100px;*/ }
 header #main-navbar {
@@ -93,7 +96,7 @@ header .gradient {
             transform: rotate3d(0, 1, 0, 180deg); }
   .obj-zone .container .items {
     position: absolute;
-    top: 49%;
+    top: 15%;
     z-index: 2;
     -webkit-transform: scale(0.7);
     -ms-transform: scale(0.7);
@@ -111,9 +114,7 @@ header .gradient {
     padding: 0;
     background-size: auto 60%; }
   .obj-zone .container .row .zone-1,
-  .obj-zone .container .row .zone-3,
-  .obj-zone .container .row .zone-1-1,
-  .obj-zone .container .row .zone-3-1 {
+  .obj-zone .container .row .zone-3 {
     background: url("../svg/1Scroll_windows 1-1.svg") no-repeat;
     background-size: auto 60%;
     background-position: center 43%; }
@@ -421,16 +422,18 @@ footer {
     padding: 0;
     background-size: auto 60%; }
   .obj-zone .container .row .zone-1,
-  .obj-zone .container .row .zone-3,
-  .obj-zone .container .row .zone-1-1,
-  .obj-zone .container .row .zone-3-1 {
+  .obj-zone .container .row .zone-3 {
     background: url("../svg/1Scroll_windows 1-1.svg") no-repeat;
     background-size: auto 60%;
     background-position: center 43%; }
-  .obj-zone .container .row .zone-1-1 {
-    background-position: right 43%; }
-  .obj-zone .container .row .zone-3-1 {
-    background-position: left 43%; }
+  .obj-zone .container .row .zone-1-1 img, .obj-zone .container .row .zone-3-1 img {
+    position: absolute;
+    top: 17%;
+    left: -108%;
+    width: 240%;
+    height: auto; }
+  .obj-zone .container .row .zone-3-1 img {
+    left: -29%; }
   .obj-zone .container .row .zone-2 {
     background: url("../svg/1Scroll_door.svg") no-repeat;
     background-position: 0 102%; }

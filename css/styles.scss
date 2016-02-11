@@ -10,6 +10,9 @@ $color3: rgb(35, 34, 37);
 .fullHeight{
   height: 100%;
 }
+.hideOp{
+    opacity: 0;
+}
 header {
     .pre_nav{
         /* height: 100px;*/
@@ -114,7 +117,7 @@ header {
        }
     .items {
       position: absolute;
-      top: 49%;
+      top: 15%;
       z-index: 2;
       -webkit-transform: scale(.7);
       transform: scale(.7);
@@ -137,9 +140,8 @@ header {
         background-size: auto 60%;
       }
       .zone-1,
-      .zone-3,
-      .zone-1-1,
-      .zone-3-1 {
+      .zone-3
+     {
         background: url("../svg/1Scroll_windows 1-1.svg") no-repeat;
         background-size: auto 60%;
         background-position: center 43%;
@@ -585,18 +587,24 @@ footer {
               background-size: auto 60%;
             }
             .zone-1,
-            .zone-3,
-            .zone-1-1,
-            .zone-3-1 {
+            .zone-3 {
               background: url("../svg/1Scroll_windows 1-1.svg") no-repeat;
               background-size: auto 60%;
               background-position: center 43%;
             }
-            .zone-1-1 {
-              background-position: right 43%;
+            .zone-1-1, .zone-3-1 {
+                img{
+                    position: absolute;
+                    top:17%;
+                    left:-108%;
+                    width: 240%;
+                    height: auto;
+                }
             }
             .zone-3-1 {
-              background-position: left 43%;
+                img{
+                    left:-29%;
+                }
             }
             .zone-2 {
               background: url("../svg/1Scroll_door.svg") no-repeat;
