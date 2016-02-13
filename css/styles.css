@@ -286,9 +286,24 @@ footer {
     background-image: url("../svg/2scrollLeft-01.svg");
     background-size: cover; }
     .content-menu ul {
-      margin: 30% -10px; }
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding: 0; }
       .content-menu ul li {
-        font-size: 2em; }
+        font-size: 1.5em;
+        color: #fff;
+        text-align: center; }
+    .content-menu #ft {
+      top: -75px; }
+      .content-menu #ft li {
+        text-align: center; }
+    .content-menu #sd {
+      top: 110px; }
+      .content-menu #sd li {
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 0 1px #fff; }
 
   .reservation {
     height: 400px;
@@ -382,9 +397,13 @@ footer {
     text-align: center;
     font-size: 2em; }
   .content-menu #sd {
-    padding-left: 20px; }
+    padding-left: 20px;
+    top: 0; }
+    .content-menu #sd li {
+      color: #232225; }
   .content-menu #ft {
-    padding-left: 0; }
+    padding-left: 0;
+    top: 0; }
 
   .reservation {
     height: 800px;
@@ -490,25 +509,44 @@ footer {
       margin: 30% auto; }
       .content-menu ul.ft li {
         color: #eee;
-        text-align: left; }
+        text-align: center; }
       .content-menu ul.sd li {
         color: #232225;
-        text-align: right; }
+        text-align: center; }
       .content-menu ul li {
         font-size: 3em;
         list-style: none; }
 
+  .obj-zone .container .board-text {
+    position: absolute;
+    top: 65%;
+    left: 12%;
+    z-index: 30;
+    font-size: 3.5em;
+    color: white;
+    text-shadow: 0 0 3px #fff; }
   .obj-zone .container .card {
     top: 25%; }
 
   .content-menu #moon {
     margin-top: 20px; }
-  .content-menu #ft li, .content-menu #sd li {
-    font-size: 3em; }
-  .content-menu #ft li {
-    text-align: left; }
-  .content-menu #sd li {
-    text-align: right; }
+  .content-menu #ft, .content-menu #sd {
+    width: 450px;
+    position: absolute; }
+    .content-menu #ft li, .content-menu #sd li {
+      cursor: pointer;
+      font-size: 3em; }
+  .content-menu #ft {
+    left: -122px;
+    top: 0; }
+    .content-menu #ft li {
+      text-align: center; }
+  .content-menu #sd {
+    left: 22%;
+    top: 0; }
+    .content-menu #sd li {
+      text-align: center;
+      color: #232225; }
 
   .reservation {
     height: 1000px;
@@ -570,5 +608,3 @@ footer {
 
   .hands-up {
     height: 625px; } }
-
-/*# sourceMappingURL=styles.css.map */

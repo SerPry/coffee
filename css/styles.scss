@@ -376,10 +376,30 @@ footer {
         background-image: url("../svg/2scrollLeft-01.svg");
         background-size: cover;
         ul{
-            margin: 30% -10px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            padding: 0;
+            
           li{
-            font-size: 2em;
+            font-size: 1.5em;
+            color: #fff;
+            text-align: center;
           }
+        }
+        #ft{
+            top:-75px;
+            li{
+                text-align: center;
+            }
+        }
+        #sd{
+            top:110px;
+            li{
+                text-align: center;
+                color: #fff;
+                text-shadow: 0 0 1px #fff;
+            }
         }
       }
       .reservation{
@@ -525,9 +545,14 @@ footer {
       }
       #sd{
           padding-left: 20px;
+          top:0;
+          li{
+              color: $color3;
+          }
       }
       #ft{
           padding-left: 0;
+          top:0;
       }
       }
       .reservation{
@@ -687,23 +712,33 @@ footer {
           &.ft {
             li {
               color: $color2;
-              text-align: left;
+              text-align: center;
             }
           }
           &.sd {
             li {
               color: $color3;
-              text-align: right;
+              text-align: center;
             }
           }
           li {
             font-size: 3em;
             list-style: none;
+            
           }
         }
       }
       .obj-zone{
         .container{
+            .board-text{
+                position: absolute;
+                top:65%;
+                left: 12%;
+                z-index: 30;
+                font-size: 3.5em;
+                color: white;
+                text-shadow: 0 0 3px #fff;
+            }
             .card{
                 top:25%;
             }
@@ -714,18 +749,27 @@ footer {
           margin-top: 20px;
       }
       #ft,#sd{
+          width: 450px;
+          position: absolute;
           li{
+              cursor: pointer;
               font-size:3em;
           }
       }
       #ft{
+          left: -122px;
+          top:0;
           li{
-              text-align: left;
+              text-align: center;
           }
       }
       #sd{
+          left: 22%;
+          top: 0;
+          
           li{
-              text-align: right;
+              text-align: center;
+              color:$color3;
           }
       }
   }

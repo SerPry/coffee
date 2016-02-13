@@ -51,7 +51,12 @@
                     $(this)
                     .removeClass('fadeOutLeft')
                     .removeClass('hideOp')
+                    .removeClass("delay-01")
                     .addClass('fadeInLeft');
+                    $(".board-text")
+                    .removeClass("fadeOut")
+                    .addClass("delay-01")
+                    .addClass("fadeIn");
                 }
             },{
                 offset:"35%"
@@ -61,11 +66,17 @@
                     $(this)
                     .removeClass("fadeInLeft")
                     .addClass('fadeOutLeft')
+                    .addClass('delay-01')
                     .addClass('hideOp');
+                    $(".board-text")
+                    .removeClass("fadeIn")
+                    .removeClass("delay-01")
+                    .addClass("fadeOut");
                 }
             },{
                 offset:-50
             });
+            
     // $('.animation-zone').children('.first-part')
     //     .waypoint(function(dir) {
     //         if (dir === "down") {
@@ -188,12 +199,17 @@
 $('#scene').parallax();
 $('#scene-2').parallax();
 /****************************************        Menu           *********************************************/
-//     $('.ft').find('li').hover(function(){
-//     $(this).animate({fontSize:"40px"},300);
-//     var $num = $(this).data('num');
-//     var $corrNum=$num+"-"+$num;
-//     console.log($corrNum);
-//      $('.sd').find('li').eq($num-1).toggleClass('active');
+    $('.ft').find('li').click(function(){
+      var $name = $(this).data('num');
+    var elem = $(".sd");
+    for (var i = 0 ; i<elem.find('li').length;i++){
+        elem.find("li").eq(i).text($name+"-"+(i+1));    
+    }
+    
+});
+// $(".ft").find("li").hover(function () {
+//       $(this).animate({fontSize:"40px"},300);
+
 // });
 // $('.content-menu ul').find('li').mouseout(function(){
 //     $(this).animate({fontSize:'35px'},300);
