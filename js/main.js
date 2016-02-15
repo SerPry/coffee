@@ -76,7 +76,7 @@
             },{
                 offset:-50
             });
-            
+
     // $('.animation-zone').children('.first-part')
     //     .waypoint(function(dir) {
     //         if (dir === "down") {
@@ -203,10 +203,15 @@ $('#scene-2').parallax();
       var $name = $(this).data('num');
     var elem = $(".sd");
     for (var i = 0 ; i<elem.find('li').length;i++){
-        elem.find("li").eq(i).text($name+"-"+(i+1));    
+        elem.find("li").eq(i).text($name+"-"+(i+1));
     }
-    
+
 });
+/****************    Nav      **********************/
+var options = {
+  offset: 300
+}
+var header = new Headhesive('.header',options);
 // $(".ft").find("li").hover(function () {
 //       $(this).animate({fontSize:"40px"},300);
 

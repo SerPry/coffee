@@ -44,17 +44,19 @@ header nav {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
         transform: translateX(-50%); }
-header .divider-1 {
+
+/*end of header*/
+.divider-1 {
   height: 35px;
   width: 100%;
   background: url(../svg/divider-1.svg); }
-header .gradient {
+
+.gradient {
   height: 130px;
   background-image: -webkit-linear-gradient(right, #586e66 50%, #83ad9e 50%);
   background-image: linear-gradient(to left, #586e66 50%, #83ad9e 50%);
   background-size: 5%; }
 
-/*end of header*/
 .obj-zone {
   position: relative; }
   .obj-zone .divider-2 {
@@ -263,9 +265,11 @@ footer {
       width: 100%; }
     header #main-navbar #ft-menu, header #main-navbar #sd-menu {
       display: none; }
-  header .divider-1 {
+
+  .divider-1 {
     height: 10px; }
-  header .gradient {
+
+  .gradient {
     height: 55px;
     background-size: 10%; }
 
@@ -374,8 +378,6 @@ footer {
     height: 520px;
     background-size: auto 521px; }
 
-  header .gradient {
-    background-size: 10%; }
   header #main-navbar {
     max-height: 75px; }
     header #main-navbar li {
@@ -389,6 +391,9 @@ footer {
       display: block; }
     header #main-navbar #main-list {
       display: none; }
+
+  .gradient {
+    background-size: 10%; }
 
   #static {
     right: -5%; }
@@ -482,15 +487,17 @@ footer {
       font-size: 2em;
       width: 250px;
       margin-top: 40px; }
-  header .divider-1 {
+  header nav {
+    height: 165px; }
+
+  .divider-1 {
     height: 35px;
     width: 100%;
     background: url(../svg/divider-1.svg); }
-  header .gradient {
+
+  .gradient {
     height: 130px;
     background-size: 5%; }
-  header nav {
-    height: 165px; }
 
   .content-menu {
     height: 945px;
@@ -608,3 +615,31 @@ footer {
 
   .hands-up {
     height: 625px; } }
+.headhesive {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: 0.5s;
+          transition: 0.5s; }
+  .headhesive #main-navbar {
+    background-image: none;
+    background-color: #fff; }
+  .headhesive .logo {
+    display: none; }
+
+.headhesive--stick {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0); }
+  .headhesive--stick #main-navbar {
+    height: 35px; }
+    .headhesive--stick #main-navbar li {
+      margin-top: 0; }
+
+.headhesive--unstick #main-navbar {
+  height: 35px; }
+  .headhesive--unstick #main-navbar li {
+    margin-top: 0; }

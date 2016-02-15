@@ -13,6 +13,7 @@ $color3: rgb(35, 34, 37);
 .hideOp{
     opacity: 0;
 }
+
 header {
     .pre_nav{
         /* height: 100px;*/
@@ -57,19 +58,19 @@ header {
       transform: translateX(-50%);
     }
   }
-  .divider-1 {
+}
+/*end of header*/
+.divider-1 {
     height: 35px;
     width: 100%;
     background: url(../svg/divider-1.svg);
-  }
-  .gradient {
+}
+.gradient {
     height: 130px;
     background-image: -webkit-linear-gradient(right,#586e66 50%,#83ad9e 50%);
     background-image: linear-gradient(to left,#586e66 50%,#83ad9e 50%);
     background-size: 5%;
-  }
 }
-/*end of header*/
 .obj-zone {
     position: relative;
   .divider-2 {
@@ -343,13 +344,13 @@ footer {
            }
 
        }
-       .divider-1{
+     }
+     .divider-1{
          height: 10px;
-       }
-       .gradient{
+     }
+     .gradient{
          height: 55px;
          background-size: 10%;
-       }
      }
      .obj-zone{
        .divider-2{
@@ -380,7 +381,7 @@ footer {
             left: 0;
             right: 0;
             padding: 0;
-            
+
           li{
             font-size: 1.5em;
             color: #fff;
@@ -510,9 +511,6 @@ footer {
        background-size: auto 521px;
      }
     header{
-      .gradient{
-        background-size: 10%;
-      }
       #main-navbar{
           max-height: 75px;
        li{
@@ -532,6 +530,10 @@ footer {
     }
 }
     }
+    .gradient{
+      background-size: 10%;
+    }
+
     #static{
       right: -5%;
     }
@@ -679,19 +681,20 @@ footer {
              margin-top: 40px;
           }
           }
-        .divider-1 {
-          height: 35px;
-          width: 100%;
-          background: url(../svg/divider-1.svg);
-        }
-        .gradient {
-          height: 130px;
-          background-size: 5%;
-        }
         nav{
           height: 165px;
         }
       }
+      .divider-1 {
+        height: 35px;
+        width: 100%;
+        background: url(../svg/divider-1.svg);
+      }
+      .gradient {
+        height: 130px;
+        background-size: 5%;
+      }
+
       .content-menu {
         height: 945px;
         background: url("../svg/2scroll-full-01-01.svg") no-repeat;
@@ -724,7 +727,7 @@ footer {
           li {
             font-size: 3em;
             list-style: none;
-            
+
           }
         }
       }
@@ -766,7 +769,7 @@ footer {
       #sd{
           left: 22%;
           top: 0;
-          
+
           li{
               text-align: center;
               color:$color3;
@@ -866,4 +869,35 @@ footer {
    }
    @media only screen and (min-width : 604px) and (orientation: landscape){
 
+   }
+   .headhesive{
+       transform: translateY(-100%);
+       z-index: 100;
+        width: 100%;
+       position: fixed;
+       transition: 0.5s;
+       #main-navbar{
+           background-image: none;
+           background-color: #fff;
+       }
+       .logo{
+           display: none;
+       }
+   }
+   .headhesive--stick{
+       transform: translateY(0);
+       #main-navbar{
+           height: 35px;
+           li{
+               margin-top: 0;
+           }
+       }
+   }
+   .headhesive--unstick{
+       #main-navbar{
+           height: 35px;
+           li{
+               margin-top: 0;
+           }
+       }
    }
