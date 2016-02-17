@@ -1,11 +1,13 @@
 'use strict';
 (function() {
+    /***************************  ScrollTo     *********************/
     $('header nav ').find('a').click(function() {
         var $place = "#" + $(this).data('link');
         console.log($place);
         $.scrollTo($place, 500);
     });
     /************************** Animations ********************************************/
+    
     $('#front')
         .waypoint(function(dir){
             if (dir === "down"){
@@ -208,10 +210,13 @@ $('#scene-2').parallax();
 
 });
 /****************    Nav      **********************/
-var options = {
-  offset: 300
-}
-var header = new Headhesive('.header',options);
+
+
+// var options = {
+//   offset: 300
+// }
+// var header = new Headhesive('.header',options);
+
 // $(".ft").find("li").hover(function () {
 //       $(this).animate({fontSize:"40px"},300);
 
@@ -220,4 +225,57 @@ var header = new Headhesive('.header',options);
 //     $(this).animate({fontSize:'35px'},300);
 //     $('li').removeClass('active');
 // });
+/********************   Scroll + Nav   *********************************/
+var position;
+function addHandler(object, event, handler, useCapture) {
+    if (object.addEventListener) {
+        object.addEventListener(event, handler, useCapture ? useCapture : false);
+    } else if (object.attachEvent) {
+        object.attachEvent('on' + event, handler);
+    } else alert("Add handler is not supported");
+}
+// Добавляем обработчики
+/* Gecko */
+addHandler(window, 'DOMMouseScroll', wheel);
+/* Opera */
+addHandler(window, 'mousewheel', wheel);
+/* IE */
+addHandler(document, 'mousewheel', wheel);
+// Обработчик события
+function wheel(event) {
+    var delta; // Направление скролла
+    // -1 - скролл вниз
+    // 1  - скролл вверх
+    event = event || window.event;
+    // Opera и IE работают со свойством wheelDelta
+    if (event.wheelDelta) {
+        delta = event.wheelDelta / 120;
+        // В Опере значение wheelDelta такое же, но с противоположным знаком
+        if (window.opera) delta = -delta;
+    // В реализации Gecko получим свойство detail
+    } else if (event.detail) {
+        delta = -event.detail / 3;
+    }
+    // Запрещаем обработку события браузером по умолчанию
+    if (event.preventDefault)  event.preventDefault();
+    event.returnValue = false;
+    if (delta>0) {
+        console.log("+");
+       window.scrollBy(0,-10);
+    }else{
+        console.log("-");
+        window.scrollBy(0,10);
+    }
+     position = $(window).scrollTop();
+     if (position > 250){
+         $("header")
+         .removeClass("headhesive--unstick")
+        
+         .addClass("headhesive--stick");
+     }else{
+         $("header")
+         .removeClass("headhesive--stick")
+         .addClass("headhesive--unstick");
+     }
+}
 })();

@@ -870,34 +870,42 @@ footer {
    @media only screen and (min-width : 604px) and (orientation: landscape){
 
    }
-   .headhesive{
-       transform: translateY(-100%);
+   .headhesive--stick{
        z-index: 100;
         width: 100%;
        position: fixed;
        transition: 0.5s;
+    
        #main-navbar{
+           height: 35px;
            background-image: none;
            background-color: #fff;
+           opacity: 0.8;
+           li{
+               margin-top: 0;
+               
+           }
+     
        }
        .logo{
-           display: none;
+           width: 100px;
        }
    }
-   .headhesive--stick{
-       transform: translateY(0);
-       #main-navbar{
-           height: 35px;
-           li{
-               margin-top: 0;
-           }
-       }
-   }
+//    .headhesive--stick{
+//        transform: translateY(0);
+//        #main-navbar{
+//            height: 35px;
+//            opacity: 0.8;
+//            li{
+//                margin-top: 0;
+//            }
+//        }
+//    }
    .headhesive--unstick{
        #main-navbar{
-           height: 35px;
+           height: 125px;
            li{
-               margin-top: 0;
+               margin-top: 40px;
            }
        }
    }

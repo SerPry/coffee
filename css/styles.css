@@ -615,31 +615,23 @@ footer {
 
   .hands-up {
     height: 625px; } }
-.headhesive {
-  -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-          transform: translateY(-100%);
+.headhesive--stick {
   z-index: 100;
   width: 100%;
   position: fixed;
   -webkit-transition: 0.5s;
           transition: 0.5s; }
-  .headhesive #main-navbar {
-    background-image: none;
-    background-color: #fff; }
-  .headhesive .logo {
-    display: none; }
-
-.headhesive--stick {
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0); }
   .headhesive--stick #main-navbar {
-    height: 35px; }
+    height: 35px;
+    background-image: none;
+    background-color: #fff;
+    opacity: 0.8; }
     .headhesive--stick #main-navbar li {
       margin-top: 0; }
+  .headhesive--stick .logo {
+    width: 100px; }
 
 .headhesive--unstick #main-navbar {
-  height: 35px; }
+  height: 125px; }
   .headhesive--unstick #main-navbar li {
-    margin-top: 0; }
+    margin-top: 40px; }
