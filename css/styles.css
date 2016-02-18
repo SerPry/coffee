@@ -330,7 +330,7 @@ footer {
       height: auto;
       width: 8%;
       left: 50%;
-      top: -190px; }
+      top: 8px; }
     .reservation .container .row #reservation-info {
       font-size: 0.8em;
       width: 90px;
@@ -355,7 +355,7 @@ footer {
     height: 410px;
     background-size: auto 490px;
     background-position: 100% 35px; }
-    footer .footer-img img {
+    footer .footer-img img:last-of-type {
       top: -50px !important;
       z-index: 200; }
     footer .container .row img {
@@ -548,21 +548,22 @@ footer {
     margin-top: 20px; }
   .content-menu #ft, .content-menu #sd {
     width: 450px;
-    position: absolute; }
+    position: absolute;
+    top: -25px; }
     .content-menu #ft li, .content-menu #sd li {
       cursor: pointer;
       font-size: 3em; }
   .content-menu #ft {
-    left: -122px;
-    top: 0; }
+    left: -122px; }
     .content-menu #ft li {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 10px; }
   .content-menu #sd {
-    left: 22%;
-    top: 0; }
+    left: 22%; }
     .content-menu #sd li {
       text-align: center;
-      color: #232225; }
+      color: #232225;
+      margin-bottom: 10px; }
 
   .reservation {
     height: 1000px;

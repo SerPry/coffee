@@ -1,10 +1,18 @@
 'use strict';
 (function() {
+    var position;
     /***************************  ScrollTo     *********************/
     $('header nav ').find('a').click(function() {
         var $place = "#" + $(this).data('link');
-        console.log($place);
+        // console.log($place);
         $.scrollTo($place, 500);
+        
+        
+         $("header")
+         .removeClass("headhesive--unstick")
+        
+         .addClass("headhesive--stick");
+     
     });
     /************************** Animations ********************************************/
     
@@ -240,7 +248,7 @@ var count;
 //     $('li').removeClass('active');
 // });
 /********************   Scroll + Nav   *********************************/
-var position;
+
 function addHandler(object, event, handler, useCapture) {
     if (object.addEventListener) {
         object.addEventListener(event, handler, useCapture ? useCapture : false);
