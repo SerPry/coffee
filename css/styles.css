@@ -295,13 +295,19 @@ footer {
       right: 0;
       padding: 0; }
       .content-menu ul li {
-        font-size: 1.5em;
+        font-size: 2em;
         color: #fff;
         text-align: center; }
     .content-menu #ft {
-      top: -75px; }
+      position: relative;
+      top: -50px; }
       .content-menu #ft li {
         text-align: center; }
+        .content-menu #ft li ul {
+          position: relative;
+          margin: 0; }
+          .content-menu #ft li ul li {
+            font-size: 0.6em; }
     .content-menu #sd {
       top: 110px; }
       .content-menu #sd li {
@@ -349,6 +355,9 @@ footer {
     height: 410px;
     background-size: auto 490px;
     background-position: 100% 35px; }
+    footer .footer-img img {
+      top: -50px !important;
+      z-index: 200; }
     footer .container .row img {
       width: 90%;
       left: 5%;
@@ -625,7 +634,9 @@ footer {
     height: 35px;
     background-image: none;
     background-color: #fff;
-    opacity: 0.8; }
+    opacity: 0.8;
+    -webkit-transition: 0.5s;
+            transition: 0.5s; }
     .headhesive--stick #main-navbar li {
       margin-top: 0; }
   .headhesive--stick .logo {

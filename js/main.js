@@ -209,8 +209,22 @@ $('#scene-2').parallax();
     }
 
 });
-/****************    Nav      **********************/
+/****************    Menu      **********************/
+var $liElem = $("#ft li ul");
+$liElem.slideUp();
+var count;
 
+ $("#ft").children("li").click(function(){
+    $liElem.slideUp();
+    count  = $(this).find("ul li");
+    for (var i= 0 ; i<count.length;i++){
+        count.eq(i).text($(this).data("num")+' - '+(i+1));
+    }
+    if( $(this).find("ul").css("display") === "none"){
+      $(this).find("ul").slideDown();  
+    }
+    
+  });
 
 // var options = {
 //   offset: 300

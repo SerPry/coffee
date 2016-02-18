@@ -383,15 +383,24 @@ footer {
             padding: 0;
 
           li{
-            font-size: 1.5em;
+            font-size: 2em;
             color: #fff;
             text-align: center;
           }
         }
         #ft{
-            top:-75px;
+            position: relative;
+            top:-50px;
+            
             li{
                 text-align: center;
+                ul{
+                    position: relative;
+                    margin: 0;
+                    li{
+                        font-size: 0.6em;
+                    }
+                }
             }
         }
         #sd{
@@ -453,6 +462,13 @@ footer {
         height: 410px;
         background-size: auto 490px;
         background-position: 100% 35px;
+        .footer-img {
+            img{
+                
+            top: -50px !important;
+           z-index: 200;
+            }
+        }
         .container{
           .row{
             img{
@@ -881,6 +897,7 @@ footer {
            background-image: none;
            background-color: #fff;
            opacity: 0.8;
+           transition: 0.5s;
            li{
                margin-top: 0;
                
