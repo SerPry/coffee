@@ -175,6 +175,10 @@ header nav {
     /*     // height: 1200px;*/
     /*     padding: 0;*/
     /*   }*/ }
+    .reservation .container .row #sceen {
+      background: url("../svg/3Scroll_sceen .svg") no-repeat;
+      background-size: 85%;
+      background-position: center 0px; }
     .reservation .container .row img {
       position: absolute; }
     .reservation .container .row .windows {
@@ -287,7 +291,7 @@ footer {
 
   .content-menu {
     height: 450px;
-    background-image: url("../svg/2scrollLeft-01.svg");
+    background-image: url("../svg/2scrollLeft-02-01.svg");
     background-size: cover; }
     .content-menu ul {
       position: absolute;
@@ -326,6 +330,10 @@ footer {
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%); }
+    .reservation .container .row #sceen {
+      height: 400px;
+      background-size: 63%;
+      background-position: center 0px; }
     .reservation .container .row #flower {
       height: auto;
       width: 8%;
@@ -432,6 +440,10 @@ footer {
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%); }
+    .reservation .container .row #sceen {
+      height: 800px;
+      background-size: 53%;
+      background-position: bottom; }
     .reservation .container .row img {
       height: 800px; }
 
@@ -570,6 +582,9 @@ footer {
     background-size: auto 1000px; }
     .reservation img {
       width: 85%; }
+    .reservation .container .row #sceen {
+      background-size: 85%;
+      height: 1000px; }
     .reservation .container .row img {
       height: 1000px; }
     .reservation .container .row .flowerpot {

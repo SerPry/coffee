@@ -216,6 +216,11 @@ header {
   background: url("../svg/res_back.svg") ;
   .container {
     .row {
+        #sceen{
+            background: url("../svg/3Scroll_sceen .svg") no-repeat;
+            background-size: 85%;
+            background-position: center 0px ;
+        }
     /*   [class*='col-'] {*/
     /*     // height: 1200px;*/
     /*     padding: 0;*/
@@ -374,7 +379,7 @@ footer {
       }
       .content-menu{
         height: 450px;
-        background-image: url("../svg/2scrollLeft-01.svg");
+        background-image: url("../svg/2scrollLeft-02-01.svg");
         background-size: cover;
         ul{
             position: absolute;
@@ -426,6 +431,11 @@ footer {
         }
         .container{
           .row{
+              #sceen{
+                  height: 400px;
+                  background-size: 63%;
+                  background-position: center 0px;
+              }
             #flower{
               height: auto;
               width: 8%;
@@ -588,6 +598,11 @@ footer {
         }
         .container{
           .row{
+              #sceen{
+                  height: 800px;
+                  background-size: 53%;
+                  background-position: bottom;
+              }
             img{
               height: 800px;
             }
@@ -803,6 +818,10 @@ footer {
         }
         .container{
           .row{
+              #sceen{
+                  background-size: 85%;
+                  height: 1000px;
+              }
               img{
                   height: 1000px;
               }
