@@ -125,25 +125,25 @@
     //     }, {
     //         offset: -400
     //     });
-    $('#flower')
-        .waypoint(function(dir) {
-            if (dir === 'down') {
-                $(this)
-                    .removeClass('fadeOutDown')
-                    .addClass('fadeInDown');
-            }
-        }, {
-            offset: '70%'
-        })
-        .waypoint(function(dir) {
-            if (dir === 'up') {
-                $(this)
-                    .removeClass('fadeInDown')
-                    .addClass('fadeOutDown');
-            }
-        }, {
-            offset: -100
-        });
+    // $('#flower')
+    //     .waypoint(function(dir) {
+    //         if (dir === 'down') {
+    //             $(this)
+    //                 .removeClass('fadeOutDown')
+    //                 .addClass('fadeInDown');
+    //         }
+    //     }, {
+    //         offset: '70%'
+    //     })
+    //     .waypoint(function(dir) {
+    //         if (dir === 'up') {
+    //             $(this)
+    //                 .removeClass('fadeInDown')
+    //                 .addClass('fadeOutDown');
+    //         }
+    //     }, {
+    //         offset: -100
+    //     });
     $('.flowerpot').first()
         .waypoint(function(dir) {
             if (dir === 'down') {

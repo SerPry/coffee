@@ -220,6 +220,10 @@ header {
             background: url("../svg/3Scroll_sceen .svg") no-repeat;
             background-size: 85%;
             background-position: center 0px ;
+            .flower-place{
+                width: 100%;
+                position: relative;
+            }
         }
     /*   [class*='col-'] {*/
     /*     // height: 1200px;*/
@@ -248,7 +252,7 @@ header {
           left: 30%;
         }
         img:not(.sceen) {
-          top: 47.5%;
+        //   top: 47.5%;
           left: 43%;
         }
       }
@@ -433,14 +437,20 @@ footer {
           .row{
               #sceen{
                   height: 400px;
-                  background-size: 63%;
+                  background-size: 200px;
                   background-position: center 0px;
+                  .flower-place{
+                      height: 238px;
+                      img{
+                          bottom: -3px;
+                      }
+                  }
               }
             #flower{
               height: auto;
               width: 8%;
               left: 50%;
-              top:8px;
+            //   top:8px;
             }
             #reservation-info{
               font-size: 0.8em;
@@ -498,7 +508,7 @@ footer {
                .row{
                    #flower{
                        width: 35px;
-                       top:170px;
+                    //    top:170px;
                    }
                }
            }
@@ -602,6 +612,12 @@ footer {
                   height: 800px;
                   background-size: 53%;
                   background-position: bottom;
+                  .flower-place{
+                      height: 470px;
+                      img{
+                          bottom: -9px;
+                      }
+                  }
               }
             img{
               height: 800px;
@@ -693,7 +709,7 @@ footer {
           top:480px;
         }
         #flower{
-          top:-20px;
+        //   top:-20px;
           width: 8%;
         }
       }
@@ -821,6 +837,14 @@ footer {
               #sceen{
                   background-size: 85%;
                   height: 1000px;
+                  .flower-place{
+                      height: 585px;
+                      position: relative;
+                    //   background-color: pink;
+                    img{
+                       bottom: -9px;
+                    }
+                  }
               }
               img{
                   height: 1000px;
@@ -846,7 +870,7 @@ footer {
             }
             #flower{
               width: 10%;
-              top: 10%;
+            //   top: 10%;
             }
           }
         }

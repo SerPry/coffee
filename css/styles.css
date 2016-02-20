@@ -179,6 +179,9 @@ header nav {
       background: url("../svg/3Scroll_sceen .svg") no-repeat;
       background-size: 85%;
       background-position: center 0px; }
+      .reservation .container .row #sceen .flower-place {
+        width: 100%;
+        position: relative; }
     .reservation .container .row img {
       position: absolute; }
     .reservation .container .row .windows {
@@ -197,7 +200,6 @@ header nav {
       top: 56%;
       left: 30%; }
     .reservation .container .row .col-md-6 img:not(.sceen) {
-      top: 47.5%;
       left: 43%; }
 
 /*end of reservation*/
@@ -332,13 +334,16 @@ footer {
           transform: translateX(-50%); }
     .reservation .container .row #sceen {
       height: 400px;
-      background-size: 63%;
+      background-size: 200px;
       background-position: center 0px; }
+      .reservation .container .row #sceen .flower-place {
+        height: 238px; }
+        .reservation .container .row #sceen .flower-place img {
+          bottom: -3px; }
     .reservation .container .row #flower {
       height: auto;
       width: 8%;
-      left: 50%;
-      top: 8px; }
+      left: 50%; }
     .reservation .container .row #reservation-info {
       font-size: 0.8em;
       width: 90px;
@@ -373,8 +378,7 @@ footer {
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
   .reservation .container .row #flower {
-    width: 35px;
-    top: 170px; }
+    width: 35px; }
 
   .hands-up .container .row img {
     width: 450px;
@@ -444,6 +448,10 @@ footer {
       height: 800px;
       background-size: 53%;
       background-position: bottom; }
+      .reservation .container .row #sceen .flower-place {
+        height: 470px; }
+        .reservation .container .row #sceen .flower-place img {
+          bottom: -9px; }
     .reservation .container .row img {
       height: 800px; }
 
@@ -498,7 +506,6 @@ footer {
     width: 185px;
     top: 480px; }
   .reservation .container .row #flower {
-    top: -20px;
     width: 8%; } }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -585,6 +592,11 @@ footer {
     .reservation .container .row #sceen {
       background-size: 85%;
       height: 1000px; }
+      .reservation .container .row #sceen .flower-place {
+        height: 585px;
+        position: relative; }
+        .reservation .container .row #sceen .flower-place img {
+          bottom: -9px; }
     .reservation .container .row img {
       height: 1000px; }
     .reservation .container .row .flowerpot {
@@ -602,8 +614,7 @@ footer {
       width: 210px;
       top: 59%; }
     .reservation .container .row #flower {
-      width: 10%;
-      top: 10%; }
+      width: 10%; }
 
   .hands-up {
     height: 830px; }
