@@ -1,5 +1,15 @@
+/*******************         VARS                *****************************/
 $color2: #eee;
 $color3: rgb(35, 34, 37);
+
+/***********************         fonts          ****************************/
+
+@font-face{
+    font-family: hamlake;
+    src: url("../fonts/HAMLAKE.TTF");
+}
+
+/***************       STYLES       *********************/
 .container-fluid {
     overflow-x: hidden;
     padding: 0;
@@ -189,6 +199,7 @@ header {
     background-position: bottom center;
     overflow: hidden;
     z-index: 2;
+    font-family: hamlake;
     img {
         position: absolute;
         top: 0;
@@ -196,6 +207,12 @@ header {
         &:last-of-type {
             left: -3%;
         }
+    }
+    .content-menu__h3{
+        text-align: center;
+        color:$color2;
+       
+        position: absolute;
     }
     ul {
         margin: 30% auto;
@@ -417,9 +434,13 @@ footer {
                 text-align: center;
             }
         }
+        .content-menu__h3{
+            width: 290px;
+            font-size: 3em;
+        }
         #ft {
             position: relative;
-            top: -50px;
+            top: -10px;
             li {
                 text-align: center;
                 ul {
@@ -612,6 +633,12 @@ footer {
             padding-left: 0;
             top: 0;
         }
+        .content-menu__h3{
+            width: 345px;
+            top:10px;
+            font-size: 4em;
+            
+        }
     }
     .reservation {
         height: 800px;
@@ -763,11 +790,13 @@ footer {
     }
     .content-menu {
         height: 945px;
-        background: url("../svg/2scroll-full-01-01.svg") no-repeat;
-        background-size: auto 945px;
+        background: url("../svg/2scroll-full-01-01.svg"),url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/triangular.png");
+        background-size: auto 945px, 10% 10%;
+        background-repeat: no-repeat,repeat;
         background-position: bottom center;
         overflow: hidden;
         z-index: 2;
+        // background-color: rgba(63,52,40,0.65);
         img {
             position: absolute;
             top: 0;
@@ -816,11 +845,16 @@ footer {
         #moon {
             margin-top: 20px;
         }
+        .content-menu__h3{
+            margin-top: 0;
+            width: 450px;
+            font-size: 8em;
+        }
         #ft,
         #sd {
             width: 450px;
             position: absolute;
-            top: -25px;
+            top: -20px;
             li {
                 cursor: pointer;
                 font-size: 3em;
@@ -893,9 +927,7 @@ footer {
     }
     .hands-up {
         height: 830px;
-        #hands-middle {
-            /*   margin-top: 50%;*/
-        }
+        
         .container {
             .row {
                 #hands-left {
@@ -928,7 +960,7 @@ footer {
 
 @media only screen and (min-width: 1200px) {
     footer {
-        background-position: -80px 75px
+        background-position: -80px 85px
     }
 }
 

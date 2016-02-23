@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/*******************         VARS                *****************************/
+/***********************         fonts          ****************************/
+@font-face {
+  font-family: hamlake;
+  src: url("../fonts/HAMLAKE.TTF"); }
+/***************       STYLES       *********************/
 .container-fluid {
   overflow-x: hidden;
   padding: 0; }
@@ -149,13 +155,18 @@ header nav {
   background-size: auto 945px;
   background-position: bottom center;
   overflow: hidden;
-  z-index: 2; }
+  z-index: 2;
+  font-family: hamlake; }
   .content-menu img {
     position: absolute;
     top: 0;
     left: 0; }
     .content-menu img:last-of-type {
       left: -3%; }
+  .content-menu .content-menu__h3 {
+    text-align: center;
+    color: #eee;
+    position: absolute; }
   .content-menu ul {
     margin: 30% auto; }
     .content-menu ul.ft li {
@@ -308,9 +319,12 @@ footer {
         font-size: 2em;
         color: #fff;
         text-align: center; }
+    .content-menu .content-menu__h3 {
+      width: 290px;
+      font-size: 3em; }
     .content-menu #ft {
       position: relative;
-      top: -50px; }
+      top: -10px; }
       .content-menu #ft li {
         text-align: center; }
         .content-menu #ft li ul {
@@ -436,6 +450,10 @@ footer {
   .content-menu #ft {
     padding-left: 0;
     top: 0; }
+  .content-menu .content-menu__h3 {
+    width: 345px;
+    top: 10px;
+    font-size: 4em; }
 
   .reservation {
     height: 800px;
@@ -536,8 +554,9 @@ footer {
 
   .content-menu {
     height: 945px;
-    background: url("../svg/2scroll-full-01-01.svg") no-repeat;
-    background-size: auto 945px;
+    background: url("../svg/2scroll-full-01-01.svg"), url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/triangular.png");
+    background-size: auto 945px, 10% 10%;
+    background-repeat: no-repeat,repeat;
     background-position: bottom center;
     overflow: hidden;
     z-index: 2; }
@@ -572,11 +591,15 @@ footer {
 
   .content-menu #moon {
     margin-top: 20px; }
+  .content-menu .content-menu__h3 {
+    margin-top: 0;
+    width: 450px;
+    font-size: 8em; }
   .content-menu #ft,
   .content-menu #sd {
     width: 450px;
     position: absolute;
-    top: -25px; }
+    top: -20px; }
     .content-menu #ft li,
     .content-menu #sd li {
       cursor: pointer;
@@ -627,8 +650,6 @@ footer {
 
   .hands-up {
     height: 830px; }
-    .hands-up #hands-middle {
-      /*   margin-top: 50%;*/ }
     .hands-up .container .row #hands-left {
       bottom: 80px;
       left: 210px; }
@@ -646,7 +667,7 @@ footer {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
   footer {
-    background-position: -80px 75px; } }
+    background-position: -80px 85px; } }
 /* Tablet landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   header #main-navbar li {
