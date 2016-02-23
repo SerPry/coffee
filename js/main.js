@@ -12,6 +12,7 @@
          .removeClass("headhesive--unstick")
         
          .addClass("headhesive--stick");
+         $(".navbar-collapse").removeClass("in");
      
     });
     /************************** Animations ********************************************/

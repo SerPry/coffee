@@ -270,7 +270,8 @@ footer {
       position: absolute;
       z-index: 1000;
       background-color: white;
-      width: 100%; }
+      width: 100%;
+      margin-top: -2px; }
     header #main-navbar #ft-menu,
     header #main-navbar #sd-menu {
       display: none; }
@@ -370,7 +371,7 @@ footer {
   footer {
     height: 410px;
     background-size: auto 490px;
-    background-position: 100% 35px; }
+    background-position: 100% 60px; }
     footer .footer-img img:last-of-type {
       top: -50px !important;
       z-index: 200; }
@@ -467,7 +468,7 @@ footer {
 
   footer {
     background-size: auto 760px;
-    background-position: 100% 50px;
+    background-position: 100% 93px;
     height: 640px; }
     footer .container .row img {
       bottom: 120px;
@@ -645,7 +646,7 @@ footer {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
   footer {
-    background-position: -80px 50px; } }
+    background-position: -80px 75px; } }
 /* Tablet landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   header #main-navbar li {
@@ -671,8 +672,8 @@ footer {
     background-image: none;
     background-color: #fff;
     opacity: 0.8;
-    -webkit-transition: 0.5s;
-            transition: 0.5s; }
+    -webkit-transition: opacity 0.5s;
+            transition: opacity 0.5s; }
     .headhesive--stick #main-navbar li {
       margin-top: 0; }
   .headhesive--stick .logo {

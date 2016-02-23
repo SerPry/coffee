@@ -367,7 +367,7 @@ footer {
                 z-index: 1000;
                 background-color: white;
                 width: 100%;
-                //    margin: 0;
+                margin-top: -2px;
             }
             #ft-menu,
             #sd-menu {
@@ -499,7 +499,7 @@ footer {
     footer {
         height: 410px;
         background-size: auto 490px;
-        background-position: 100% 35px;
+        background-position: 100% 60px;
         .footer-img {
             img:last-of-type {
                 top: -50px !important;
@@ -657,7 +657,7 @@ footer {
     }
     footer {
         background-size: auto 760px;
-        background-position: 100% 50px;
+        background-position: 100% 93px;
         height: 640px;
         .container {
             .row {
@@ -928,7 +928,7 @@ footer {
 
 @media only screen and (min-width: 1200px) {
     footer {
-        background-position: -80px 50px
+        background-position: -80px 75px
     }
 }
 
@@ -963,7 +963,7 @@ footer {
         background-image: none;
         background-color: #fff;
         opacity: 0.8;
-        transition: 0.5s;
+        transition: opacity 0.5s;
         li {
             margin-top: 0;
         }
