@@ -79,11 +79,13 @@ header nav {
             transform: translateX(-50%);
     height: 115px;
     width: 173px; }
-  .obj-zone .container .backface .back, .obj-zone .container .backface .front {
+  .obj-zone .container .backface .back,
+  .obj-zone .container .backface .front {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden
     /* ╨╛╨┐╤А╨╡╨┤╨╡╨╗╤П╨╡╤В ╨▒╤Г╨┤╨╡╤В ╨╗╨╕ ╨▓╨╕╨┤╨╜╨╛ ╨║╨╛╨╜╤В╨╡╨╜╤В ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨░, ╨║╨╛╤В╨╛╤А╤Л╨╣ ╤Б ╨┐╨╛╨╝╨╛╤Й╤М╤О 3d ╤В╤А╨░╨╜╤Б╤Д╨╛╤А╨╝╨░╤Ж╨╕╨╣ ╨╛╤В╨▓╨╡╤А╨╜╤Г╤В ╨╗╨╕╤Ж╨╛╨╝ ╨╛╤В ╨┐╨╛╨╗╤М╨╖╨╛╨▓╨░╤В╨╡╨╗╤П */ }
-  .obj-zone .container .front, .obj-zone .container .back {
+  .obj-zone .container .front,
+  .obj-zone .container .back {
     width: 100px;
     height: 50px;
     position: absolute;
@@ -269,7 +271,8 @@ footer {
       z-index: 1000;
       background-color: white;
       width: 100%; }
-    header #main-navbar #ft-menu, header #main-navbar #sd-menu {
+    header #main-navbar #ft-menu,
+    header #main-navbar #sd-menu {
       display: none; }
 
   .divider-1 {
@@ -408,7 +411,8 @@ footer {
       margin-top: 6px; }
       header #main-navbar li a {
         margin-top: 0; }
-    header #main-navbar #ft-menu, header #main-navbar #sd-menu {
+    header #main-navbar #ft-menu,
+    header #main-navbar #sd-menu {
       display: block; }
     header #main-navbar #main-list {
       display: none; }
@@ -419,7 +423,8 @@ footer {
   #static {
     right: -5%; }
 
-  .content-menu #sd li, .content-menu #ft li {
+  .content-menu #sd li,
+  .content-menu #ft li {
     text-align: center;
     font-size: 2em; }
   .content-menu #sd {
@@ -481,7 +486,8 @@ footer {
     background: url("../svg/1Scroll_windows 1-1.svg") no-repeat;
     background-size: auto 60%;
     background-position: center 43%; }
-  .obj-zone .container .row .zone-1-1 img, .obj-zone .container .row .zone-3-1 img {
+  .obj-zone .container .row .zone-1-1 img,
+  .obj-zone .container .row .zone-3-1 img {
     position: absolute;
     top: 17%;
     left: -108%;
@@ -565,11 +571,13 @@ footer {
 
   .content-menu #moon {
     margin-top: 20px; }
-  .content-menu #ft, .content-menu #sd {
+  .content-menu #ft,
+  .content-menu #sd {
     width: 450px;
     position: absolute;
     top: -25px; }
-    .content-menu #ft li, .content-menu #sd li {
+    .content-menu #ft li,
+    .content-menu #sd li {
       cursor: pointer;
       font-size: 3em; }
   .content-menu #ft {
@@ -658,6 +666,7 @@ footer {
   -webkit-transition: 0.5s;
           transition: 0.5s; }
   .headhesive--stick #main-navbar {
+    border-radius: 0 0 5px 5px;
     height: 35px;
     background-image: none;
     background-color: #fff;
@@ -669,7 +678,5 @@ footer {
   .headhesive--stick .logo {
     width: 100px; }
 
-.headhesive--unstick #main-navbar {
-  height: 125px; }
-  .headhesive--unstick #main-navbar li {
-    margin-top: 40px; }
+.headhesive--unstick #main-navbar li {
+  margin-top: 40px; }
