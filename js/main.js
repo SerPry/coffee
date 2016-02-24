@@ -214,7 +214,7 @@ $('#scene-2').parallax();
       var $name = $(this).data('num');
     var elem = $(".sd");
     for (var i = 0 ; i<elem.find('li').length;i++){
-        elem.find("li").eq(i).text($name+"-"+(i+1));
+        elem.find("li .main-span__sd").eq(i).text($name+"-"+(i+1));
     }
 
 });

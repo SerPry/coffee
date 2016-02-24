@@ -5,6 +5,9 @@
   font-family: hamlake;
   src: url("../fonts/HAMLAKE.TTF"); }
 /***************       STYLES       *********************/
+body {
+  font-family: hamlake; }
+
 .container-fluid {
   overflow-x: hidden;
   padding: 0; }
@@ -369,7 +372,8 @@ footer {
       left: 50%;
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
-          transform: translateX(-50%); }
+          transform: translateX(-50%);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
   .hands-up {
     height: 350px; }
@@ -444,7 +448,7 @@ footer {
     font-size: 2em; }
   .content-menu #sd {
     padding-left: 20px;
-    top: 0; }
+    top: -55px; }
     .content-menu #sd li {
       color: #232225; }
   .content-menu #ft {
@@ -454,6 +458,11 @@ footer {
     width: 345px;
     top: 10px;
     font-size: 4em; }
+  .content-menu .span__sd {
+    margin-left: 20px; }
+  .content-menu .sub__sd {
+    font-size: 0.6em;
+    text-align: center; }
 
   .reservation {
     height: 800px;
@@ -610,11 +619,13 @@ footer {
       text-align: center;
       margin-bottom: 10px; }
   .content-menu #sd {
-    left: 22%; }
+    left: 19%;
+    top: -110px; }
     .content-menu #sd li {
       text-align: center;
       color: #232225;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      width: 480px; }
 
   .reservation {
     height: 1000px;
@@ -650,6 +661,28 @@ footer {
 
   .hands-up {
     height: 830px; }
+    .hands-up .container .row .hands-up__text {
+      position: absolute;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      top: 80px; }
+      .hands-up .container .row .hands-up__text .hands-up__text_point-1 {
+        font-size: 2.2em;
+        text-align: left;
+        color: #664F22;
+        margin-bottom: -20px; }
+      .hands-up .container .row .hands-up__text .hands-up__text_point-2 {
+        font-size: 4.5em;
+        text-align: left;
+        text-transform: uppercase;
+        color: #664F22; }
+      .hands-up .container .row .hands-up__text .hands-up__text_point-3 {
+        font-size: 1.3em;
+        text-align: right;
+        color: red; }
+      .hands-up .container .row .hands-up__text .hands-up__text_point-4 {
+        font-size: 1.6em;
+        text-align: right;
+        color: red; }
     .hands-up .container .row #hands-left {
       bottom: 80px;
       left: 210px; }
