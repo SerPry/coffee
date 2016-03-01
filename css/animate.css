@@ -989,22 +989,22 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeInDown {
     from {
         opacity: 0;
-        bottom: 200px;
+        bottom: 300px !important;
     }
     to {
         opacity: 1;
-        bottom:  0px;
+        bottom:  -9px;
     }
 }
 @keyframes fadeInDown {
     from {
         opacity: 0;
-        bottom: 200px;
+        bottom: 300px !important;
     }
     to {
         opacity: 1;
-        bottom: 0px;
-    }
+        bottom: -9px;
+            }
 }
 .fadeInDown {
     -webkit-animation-name: fadeInDown;
@@ -1229,23 +1229,23 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeOutDown {
     from {
         opacity: 1;
-        bottom: 0;
+        bottom: -9px;
 
     }
     to {
         opacity: 0;
-        bottom: 200px;
+        bottom: 300px !important;
     }
 }
 @keyframes fadeOutDown {
     from {
         opacity: 1;
-       bottom: 0;
+       bottom: -9px;
 
     }
     to {
         opacity: 0;
-        bottom: 200px;
+        bottom: 300px !important;
     }
 }
 .fadeOutDown {
@@ -2820,7 +2820,7 @@ Copyright (c) 2015 Daniel Eden
     -webkit-animation-name: rotateOut;
     animation-name: rotateOut;
 }
- @media only screen and (min-width : 320px) {
+ /*@media only screen and (min-width : 320px) {
      @-webkit-keyframes fadeInDown {
     from {
         opacity: 0;
@@ -2943,4 +2943,4 @@ Copyright (c) 2015 Daniel Eden
     animation-name: fadeOutDown;
 }
  
- }
+ }*/

@@ -360,7 +360,7 @@ footer {
       .reservation .container .row #sceen .flower-place {
         height: 238px; }
         .reservation .container .row #sceen .flower-place img {
-          bottom: -3px; }
+          bottom: 100px; }
     .reservation .container .row #flower {
       height: auto;
       width: 8%;
@@ -417,6 +417,14 @@ footer {
         transform: translateX(-50%); } }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
+  .content-menu #ft li.active {
+    color: #F4C273;
+    font-size: 2.2em; }
+    .content-menu #ft li.active::after {
+      content: url("../img/cursor_click-1.png");
+      width: 100px;
+      height: 15px; }
+
   .content-menu {
     height: 520px;
     background-size: auto 521px; }
@@ -445,10 +453,10 @@ footer {
   .content-menu #sd li,
   .content-menu #ft li {
     text-align: center;
-    font-size: 2em; }
+    font-size: 1.8em; }
   .content-menu #sd {
     padding-left: 20px;
-    top: -55px; }
+    top: 0; }
     .content-menu #sd li {
       color: #232225; }
   .content-menu #ft {
@@ -459,7 +467,7 @@ footer {
     top: 10px;
     font-size: 4em; }
   .content-menu .span__sd {
-    margin-left: 20px; }
+    margin-left: 40px; }
   .content-menu .sub__sd {
     font-size: 0.6em;
     text-align: center; }
@@ -483,8 +491,6 @@ footer {
       background-position: bottom; }
       .reservation .container .row #sceen .flower-place {
         height: 470px; }
-        .reservation .container .row #sceen .flower-place img {
-          bottom: -9px; }
     .reservation .container .row img {
       height: 800px; }
 
@@ -543,6 +549,10 @@ footer {
     width: 8%; } }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
+  .content-menu #ft li.active {
+    color: #F4C273;
+    font-size: 3.5em; }
+
   header #main-navbar {
     max-height: 125px; }
     header #main-navbar li {
@@ -619,13 +629,13 @@ footer {
       text-align: center;
       margin-bottom: 10px; }
   .content-menu #sd {
-    left: 19%;
+    left: 8%;
     top: -110px; }
     .content-menu #sd li {
       text-align: center;
       color: #232225;
-      margin-bottom: 10px;
-      width: 480px; }
+      margin-bottom: 40px;
+      width: 490px; }
 
   .reservation {
     height: 1000px;
@@ -639,7 +649,7 @@ footer {
         height: 585px;
         position: relative; }
         .reservation .container .row #sceen .flower-place img {
-          bottom: -9px; }
+          bottom: 300px; }
     .reservation .container .row img {
       height: 1000px; }
     .reservation .container .row .flowerpot {
@@ -735,3 +745,7 @@ footer {
 
 .headhesive--unstick #main-navbar li {
   margin-top: 40px; }
+
+@media only screen and (min-width: 768px) {
+  .headhesive--unstick #main-navbar {
+    margin-top: 15px; } }

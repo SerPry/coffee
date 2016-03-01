@@ -2,6 +2,7 @@
 $color2: #eee;
 $color3: rgb(35, 34, 37);
 $color4:#664F22;
+$color5:#F4C273;
 
 /***********************         fonts          ****************************/
 
@@ -30,6 +31,7 @@ body{
 .hideOp {
     opacity: 0;
 }
+
 
 header {
     .pre_nav {
@@ -485,7 +487,7 @@ footer {
                     .flower-place {
                         height: 238px;
                         img {
-                            bottom: -3px;
+                            bottom: 100px;
                         }
                     }
                 }
@@ -493,6 +495,7 @@ footer {
                     height: auto;
                     width: 8%;
                     left: 50%;
+                    // bottom: 100px;
                     //   top:8px;
                 }
                 #reservation-info {
@@ -588,6 +591,17 @@ footer {
 /* Small Devices, Tablets */
 
 @media only screen and (min-width: 768px) {
+    .content-menu #ft li.active{
+    color:$color5;
+    font-size: 2.2em;
+    &::after{
+        content: url("../img/cursor_click-1.png");
+        width: 100px;      
+        height: 15px; 
+        // position: absolute;
+        // top:65px;
+    }
+}
     .content-menu {
         height: 520px;
         background-size: auto 521px;
@@ -624,14 +638,15 @@ footer {
         #ft {
             li {
                 text-align: center;
-                font-size: 2em;
+                font-size: 1.8em;
             }
         }
         #sd {
             padding-left: 20px;
-            top: -55px;
+            top: 0;
             li {
                 color: $color3;
+                // margin-bottom: 40px;
         
         }
         }
@@ -647,7 +662,7 @@ footer {
             
         }
          .span__sd{
-            margin-left: 20px;
+            margin-left: 40px;
             
         }
         .sub__sd{
@@ -677,7 +692,7 @@ footer {
                     .flower-place {
                         height: 470px;
                         img {
-                            bottom: -9px;
+                            // bottom: -9px;
                         }
                     }
                 }
@@ -781,6 +796,10 @@ footer {
 /* Medium Devices, Desktops */
 
 @media only screen and (min-width: 992px) {
+    .content-menu #ft li.active{
+    color:$color5;
+    font-size: 3.5em;
+    }
     header {
         #main-navbar {
             max-height: 125px;
@@ -886,13 +905,13 @@ footer {
             }
         }
         #sd {
-            left: 19%;
+            left: 8%;
             top:-110px;
             li {
                 text-align: center;
                 color: $color3;
-                margin-bottom: 10px;
-                width: 480px;
+                margin-bottom: 40px;
+                width: 490px;
             }
         }
     }
@@ -912,7 +931,8 @@ footer {
                         position: relative;
                         //   background-color: pink;
                         img {
-                            bottom: -9px;
+                            // bottom: -9px;
+                            bottom:300px;
                         }
                     }
                 }
@@ -1070,6 +1090,13 @@ footer {
         // height: 125px;
         li {
             margin-top: 40px;
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    .headhesive--unstick{
+        #main-navbar{
+            margin-top: 15px;
         }
     }
 }
