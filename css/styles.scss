@@ -396,7 +396,7 @@ footer {
                 position: absolute;
                 z-index: 1000 !important;
                 background-color: white;
-                width: 98%;
+                width: 100%;
                 margin-top: -2px;
                 li{
                     z-index: 1000;
@@ -416,7 +416,7 @@ footer {
         background-size: 10%;
     }
     .obj-zone {
-        z-index: -10;
+        z-index: -9;
         .divider-2 {
             height: 60px;
             
@@ -438,7 +438,7 @@ footer {
         height: 120px;
     }
     .content-menu {
-        z-index: -10;
+        // z-index: -10;
         height: 450px;
         background-image: url("../svg/2scrollLeft-02-01.svg");
         background-size: cover;
@@ -481,7 +481,7 @@ footer {
         }
     }
     .reservation {
-        z-index: -10;
+        // z-index: -10;
         height: 400px;
         background-size: auto 400px;
         img {
@@ -525,7 +525,7 @@ footer {
         }
     }
     .hands-up {
-        z-index: -10;
+        // z-index: -10;
         height: 350px;
         .container {
             /*   height: 350px;*/
@@ -638,7 +638,7 @@ footer {
                 display: block;
             }
             #main-list {
-                // display: none;
+                display: none;
             }
         }
     }
@@ -647,6 +647,9 @@ footer {
     }
     #static {
         right: -5%;
+    }
+    .obj-zone{
+        z-index: 0;
     }
     .content-menu {
         #sd,
@@ -1060,6 +1063,21 @@ footer {
     .obj-zone .container .row .zone-2 {
         background-position: center 100%;
     }
+    .content-menu #ft li, .content-menu #sd li{
+        font-size: 2em;
+        &.active{
+            font-size: 2.5em;
+        }
+    }
+    .content-menu #ft{
+        left: -75px;
+    }
+    .content-menu #sd{
+        left:0;
+    }
+    .content-menu .content-menu__h3{
+        width: 390px;
+    }
     .reservation .container .row #reservation-info {
         font-size: 1.6em;
     }
@@ -1067,6 +1085,15 @@ footer {
         height: 625px;
     }
 }
+/*** Iphone landscape  ***/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
+        .content-menu .content-menu__h3{
+            width: 535px;
+        }
+        .content-menu #ft{
+            top:-60px;
+        }
+    }
 
 @media only screen and (min-width: 604px) and (orientation: landscape) {}
 

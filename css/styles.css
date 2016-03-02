@@ -292,7 +292,7 @@ footer {
         position: absolute;
         z-index: 1000 !important;
         background-color: white;
-        width: 98%;
+        width: 100%;
         margin-top: -2px; }
         header #main-navbar #main-list li {
           z-index: 1000; }
@@ -308,7 +308,7 @@ footer {
     background-size: 10%; }
 
   .obj-zone {
-    z-index: -10; }
+    z-index: -9; }
     .obj-zone .divider-2 {
       height: 60px; }
     .obj-zone .container .card {
@@ -322,7 +322,6 @@ footer {
     height: 120px; }
 
   .content-menu {
-    z-index: -10;
     height: 450px;
     background-image: url("../svg/2scrollLeft-02-01.svg");
     background-size: cover; }
@@ -356,7 +355,6 @@ footer {
         text-shadow: 0 0 1px #fff; }
 
   .reservation {
-    z-index: -10;
     height: 400px;
     background-size: auto 400px; }
     .reservation img {
@@ -390,7 +388,6 @@ footer {
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
   .hands-up {
-    z-index: -10;
     height: 350px; }
     .hands-up .container {
       /*   height: 350px;*/ }
@@ -456,12 +453,17 @@ footer {
     header #main-navbar #ft-menu,
     header #main-navbar #sd-menu {
       display: block; }
+    header #main-navbar #main-list {
+      display: none; }
 
   .gradient {
     background-size: 10%; }
 
   #static {
     right: -5%; }
+
+  .obj-zone {
+    z-index: 0; }
 
   .content-menu #sd li,
   .content-menu #ft li {
@@ -733,11 +735,32 @@ footer {
   .obj-zone .container .row .zone-2 {
     background-position: center 100%; }
 
+  .content-menu #ft li, .content-menu #sd li {
+    font-size: 2em; }
+    .content-menu #ft li.active, .content-menu #sd li.active {
+      font-size: 2.5em; }
+
+  .content-menu #ft {
+    left: -75px; }
+
+  .content-menu #sd {
+    left: 0; }
+
+  .content-menu .content-menu__h3 {
+    width: 390px; }
+
   .reservation .container .row #reservation-info {
     font-size: 1.6em; }
 
   .hands-up {
     height: 625px; } }
+/*** Iphone landscape  ***/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  .content-menu .content-menu__h3 {
+    width: 535px; }
+
+  .content-menu #ft {
+    top: -60px; } }
 .headhesive--stick {
   z-index: 100;
   width: 100%;
