@@ -709,7 +709,7 @@ footer {
                 #sceen {
                     height: 800px;
                     background-size: 53%;
-                    background-position: bottom;
+                    background-position: 48% 59%;
                     .flower-place {
                         height: 470px;
                         img {
@@ -1135,14 +1135,14 @@ footer {
     #main-navbar {
         // height: 125px;
         li {
-            margin-top: 40px;
+            margin-top: 6px;
         }
     }
 }
 @media only screen and (min-width: 768px){
     .headhesive--unstick{
         #main-navbar{
-            margin-top: 15px;
+            // margin-top: 15px;
         }
     }
 }

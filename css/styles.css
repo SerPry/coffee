@@ -503,7 +503,7 @@ footer {
     .reservation .container .row #sceen {
       height: 800px;
       background-size: 53%;
-      background-position: bottom; }
+      background-position: 48% 59%; }
       .reservation .container .row #sceen .flower-place {
         height: 470px; }
     .reservation .container .row img {
@@ -781,8 +781,4 @@ footer {
     width: 100px; }
 
 .headhesive--unstick #main-navbar li {
-  margin-top: 40px; }
-
-@media only screen and (min-width: 768px) {
-  .headhesive--unstick #main-navbar {
-    margin-top: 15px; } }
+  margin-top: 6px; }
