@@ -471,12 +471,12 @@ footer {
     font-size: 1.8em; }
   .content-menu #sd {
     padding-left: 20px;
-    top: 0; }
+    top: 110px; }
     .content-menu #sd li {
       color: #232225; }
   .content-menu #ft {
     padding-left: 0;
-    top: 0; }
+    top: 130px; }
   .content-menu .content-menu__h3 {
     width: 345px;
     top: 10px;
