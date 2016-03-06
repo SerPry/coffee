@@ -387,4 +387,19 @@ if(htmlDoc.hasClass("mobile")){
                 .addClass("headhesive--unstick");
         }
     }
+    window.onscroll = function(){myFunction()};
+
+function myFunction() {
+    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+         $("header")
+                .removeClass("headhesive--unstick")
+
+            .addClass("headhesive--stick");
+    } else {
+        $("header")
+                .removeClass("headhesive--stick")
+                .addClass("headhesive--unstick");
+        }
+    }
+
 })();
