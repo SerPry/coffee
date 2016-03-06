@@ -362,6 +362,8 @@ if(htmlDoc.hasClass("mobile")){
             // В реализации Gecko получим свойство detail
         } else if (event.detail) {
             delta = -event.detail / 3;
+            
+            
         }
         // Запрещаем обработку события браузером по умолчанию
         if (event.preventDefault) event.preventDefault();

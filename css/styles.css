@@ -8,6 +8,9 @@
 body {
   font-family: hamlake; }
 
+.navbar-toggle {
+  border: 1px solid #91918d; }
+
 .navbar-header {
   z-index: 1000; }
 
@@ -176,17 +179,15 @@ header nav {
     text-align: center;
     color: #eee;
     position: absolute; }
-  .content-menu ul {
-    margin: 30% auto; }
-    .content-menu ul.ft li {
-      color: #eee;
-      text-align: left; }
-    .content-menu ul.sd li {
-      color: #232225;
-      text-align: right; }
-    .content-menu ul li {
-      font-size: 3em;
-      list-style: none; }
+  .content-menu ul.ft li {
+    color: #eee;
+    text-align: left; }
+  .content-menu ul.sd li {
+    color: #232225;
+    text-align: right; }
+  .content-menu ul li {
+    font-size: 3em;
+    list-style: none; }
 
 /*end of content-menu*/
 .reservation {
@@ -335,11 +336,10 @@ footer {
         color: #fff;
         text-align: center; }
     .content-menu .content-menu__h3 {
-      width: 290px;
+      width: 100%;
       font-size: 3em; }
     .content-menu #ft {
-      position: relative;
-      top: -10px; }
+      top: 100px; }
       .content-menu #ft li {
         text-align: center; }
         .content-menu #ft li ul {
@@ -730,7 +730,7 @@ footer {
 /* Tablet landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   header #main-navbar li {
-    width: 200px; }
+    width: 175px; }
 
   .obj-zone .container .row .zone-2 {
     background-position: center 100%; }
@@ -757,10 +757,10 @@ footer {
 /*** Iphone landscape  ***/
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
   .content-menu .content-menu__h3 {
-    width: 535px; }
+    width: 100%; }
 
   .content-menu #ft {
-    top: -60px; } }
+    top: 90px; } }
 .headhesive--stick {
   z-index: 100;
   width: 100%;

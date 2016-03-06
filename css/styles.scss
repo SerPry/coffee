@@ -230,7 +230,7 @@ header {
         position: absolute;
     }
     ul {
-        margin: 30% auto;
+        // margin: 30% auto;
         &.ft {
             li {
                 color: $color2;
@@ -457,12 +457,12 @@ footer {
             }
         }
         .content-menu__h3{
-            width: 290px;
+            width: 100%;
             font-size: 3em;
         }
         #ft {
-            position: relative;
-            top: -10px;
+            // position: relative;
+            top: 100px;
             li {
                 text-align: center;
                 ul {
@@ -1061,7 +1061,7 @@ footer {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     header #main-navbar li {
-        width: 200px;
+        width: 175px;
     }
     .obj-zone .container .row .zone-2 {
         background-position: center 100%;
@@ -1091,10 +1091,10 @@ footer {
 /*** Iphone landscape  ***/
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
         .content-menu .content-menu__h3{
-            width: 535px;
+            width:100%;
         }
         .content-menu #ft{
-            top:-60px;
+            top:90px;
         }
     }
 
