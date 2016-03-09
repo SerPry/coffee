@@ -173,7 +173,9 @@
             .waypoint(function(dir) {
                 if (dir === 'down') {
                     $(this)
-                        .animate({"bottom": "-9px"}, "slow")
+                        .animate({
+                            "bottom": "-9px"
+                        }, "slow")
                         .removeClass("hideOp");
                 }
             }, {
@@ -194,13 +196,15 @@
             });
     };
 
-/** Mobile  **/
-if(htmlDoc.hasClass("mobile")){
-     $('#flower')
+    /** Mobile  **/
+    if (htmlDoc.hasClass("mobile")) {
+        $('#flower')
             .waypoint(function(dir) {
                 if (dir === 'down') {
                     $(this)
-                        .animate({"bottom": "-2px"}, "slow")
+                        .animate({
+                            "bottom": "-2px"
+                        }, "slow")
                         .removeClass("hideOp");
                 }
             }, {
@@ -219,8 +223,8 @@ if(htmlDoc.hasClass("mobile")){
             }, {
                 offset: 210
             });
-    
-};
+
+    };
 
 
 
@@ -301,7 +305,7 @@ if(htmlDoc.hasClass("mobile")){
     /****************    Menu      **********************/
     var $liElem = $("#ft li ul");
     $liElem.slideUp();
-   
+
     var count;
 
     $("#ft").children("li").click(function() {
@@ -309,7 +313,7 @@ if(htmlDoc.hasClass("mobile")){
         $("#ft").children("li").removeClass("active");
         $(this).addClass("active");
         count = $(this).find("ul li");
-       
+
         for (var i = 0; i < count.length; i++) {
             count.eq(i).text($(this).data("num") + ' - ' + (i + 1));
         }
@@ -362,8 +366,8 @@ if(htmlDoc.hasClass("mobile")){
             // В реализации Gecko получим свойство detail
         } else if (event.detail) {
             delta = -event.detail / 3;
-            
-            
+
+
         }
         // Запрещаем обработку события браузером по умолчанию
         if (event.preventDefault) event.preventDefault();
@@ -387,19 +391,23 @@ if(htmlDoc.hasClass("mobile")){
                 .addClass("headhesive--unstick");
         }
     }
-    window.onscroll = function(){myFunction()};
+    window.onscroll = function() {
+        myFunction()
+    };
 
-function myFunction() {
-     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150){
-         $("header")
-            .removeClass("headhesive--unstick")
-            .addClass("headhesive-middle-unstick");
-     } else if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-         $("header")
-                .removeClass("headhesive-middle-unstick")
+    function myFunction() {
+
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            $("header")
+                .removeClass("headhesive--unstick")
                 .addClass("headhesive--stick");
-    } else {
-        $("header")
+        } if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            $("header")
+                .addClass("headhesive-middle-unstick");
+
+        } else {
+            $("header")
+                .removeClass("headhesive-middle-unstick")
                 .removeClass("headhesive--stick")
                 .addClass("headhesive--unstick");
         }

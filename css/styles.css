@@ -747,9 +747,7 @@ footer {
   z-index: 100;
   width: 100%;
   position: fixed;
-  -webkit-transition: 0.5s;
-          transition: 0.5s;
-  visibility: visible; }
+  visibility: hidden; }
   .headhesive--stick #main-navbar {
     border-radius: 0 0 5px 5px;
     height: 35px;
@@ -763,8 +761,10 @@ footer {
   .headhesive--stick .logo {
     width: 100px; }
 
-headhesive-middle-unstick {
-  visibility: hidden; }
+.headhesive-middle-unstick {
+  visibility: visible;
+  -webkit-transition: 1s;
+          transition: 1s; }
 
 /* Tablet landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {

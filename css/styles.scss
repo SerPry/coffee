@@ -1084,8 +1084,8 @@ footer {
     z-index: 100;
     width: 100%;
     position: fixed;
-    transition: 0.5s;
-    visibility: visible;
+    visibility: hidden;
+    // transition: 0.5s;
     #main-navbar {
         border-radius: 0 0 5px 5px;
         height: 35px;
@@ -1102,8 +1102,9 @@ footer {
     }
 }
 
-headhesive-middle-unstick{
-    visibility: hidden;
+.headhesive-middle-unstick{
+    visibility: visible ;
+     transition: 1s;
 }
 
 
