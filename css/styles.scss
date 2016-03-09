@@ -1085,7 +1085,7 @@ footer {
     width: 100%;
     position: fixed;
     visibility: hidden;
-    // transition: 0.5s;
+    transition: all 1s;
     #main-navbar {
         border-radius: 0 0 5px 5px;
         height: 35px;
@@ -1104,7 +1104,7 @@ footer {
 
 .headhesive-middle-unstick{
     visibility: visible ;
-     transition: 1s;
+     transition:all 1s;
 }
 
 
