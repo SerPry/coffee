@@ -301,6 +301,15 @@ footer {
       header #main-navbar #sd-menu {
         display: none; }
 
+  .logo-xs {
+    width: 70px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 1100; }
+
   .divider-1 {
     height: 10px; }
 
@@ -561,7 +570,10 @@ footer {
     width: 185px;
     top: 480px; }
   .reservation .container .row #flower {
-    width: 8%; } }
+    width: 8%; }
+
+  .headhesive--unstick #main-navbar li {
+    margin-top: 6px; } }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   .content-menu #ft li.active {
@@ -722,11 +734,38 @@ footer {
     footer .container .row {
       margin-top: -340px; }
       footer .container .row img {
-        bottom: 95px; } }
+        bottom: 95px; }
+
+  .headhesive--unstick #main-navbar li {
+    margin-top: 40px; } }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
   footer {
     background-position: -80px 85px; } }
+/* Second menu */
+.headhesive--stick {
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: 0.5s;
+          transition: 0.5s;
+  visibility: visible; }
+  .headhesive--stick #main-navbar {
+    border-radius: 0 0 5px 5px;
+    height: 35px;
+    background-image: none;
+    background-color: #fff;
+    opacity: 0.8;
+    -webkit-transition: opacity 0.5s;
+            transition: opacity 0.5s; }
+    .headhesive--stick #main-navbar li {
+      margin-top: 0; }
+  .headhesive--stick .logo {
+    width: 100px; }
+
+headhesive-middle-unstick {
+  visibility: hidden; }
+
 /* Tablet landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   header #main-navbar li {
@@ -753,7 +792,10 @@ footer {
     font-size: 1.6em; }
 
   .hands-up {
-    height: 625px; } }
+    height: 625px; }
+
+  .headhesive--unstick #main-navbar li {
+    margin-top: 35px; } }
 /*** Iphone landscape  ***/
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
   .content-menu .content-menu__h3 {
@@ -761,24 +803,3 @@ footer {
 
   .content-menu #ft {
     top: 90px; } }
-.headhesive--stick {
-  z-index: 100;
-  width: 100%;
-  position: fixed;
-  -webkit-transition: 0.5s;
-          transition: 0.5s; }
-  .headhesive--stick #main-navbar {
-    border-radius: 0 0 5px 5px;
-    height: 35px;
-    background-image: none;
-    background-color: #fff;
-    opacity: 0.8;
-    -webkit-transition: opacity 0.5s;
-            transition: opacity 0.5s; }
-    .headhesive--stick #main-navbar li {
-      margin-top: 0; }
-  .headhesive--stick .logo {
-    width: 100px; }
-
-.headhesive--unstick #main-navbar li {
-  margin-top: 6px; }

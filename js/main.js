@@ -390,11 +390,14 @@ if(htmlDoc.hasClass("mobile")){
     window.onscroll = function(){myFunction()};
 
 function myFunction() {
-    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150){
          $("header")
-                .removeClass("headhesive--unstick")
-
-            .addClass("headhesive--stick");
+            .removeClass("headhesive--unstick")
+            .addClass("headhesive-middle-unstick");
+     } else if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+         $("header")
+                .removeClass("headhesive-middle-unstick")
+                .addClass("headhesive--stick");
     } else {
         $("header")
                 .removeClass("headhesive--stick")
