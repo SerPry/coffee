@@ -602,7 +602,7 @@ footer {
   .content-menu {
     height: 945px;
     background: url("../svg/2scroll-full-01-01.svg"), url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/triangular.png");
-    background-size: auto 945px, 10% 10%;
+    background-size: auto 948px, 10% 10%;
     background-repeat: no-repeat,repeat;
     background-position: bottom center;
     overflow: hidden;
@@ -747,7 +747,9 @@ footer {
   z-index: 100;
   width: 100%;
   position: fixed;
-  visibility: hidden; }
+  visibility: hidden;
+  -webkit-transition: all 1s;
+          transition: all 1s; }
   .headhesive--stick #main-navbar {
     border-radius: 0 0 5px 5px;
     height: 35px;
@@ -763,8 +765,8 @@ footer {
 
 .headhesive-middle-unstick {
   visibility: visible;
-  -webkit-transition: 1s;
-          transition: 1s; }
+  -webkit-transition: all 1s;
+          transition: all 1s; }
 
 /* Tablet landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
