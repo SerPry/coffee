@@ -1097,40 +1097,35 @@ footer {
     z-index: 100;
     width: 100%;
     position: fixed;
-<<<<<<< HEAD
-    // visibility: hidden;
-=======
-    visibility: hidden;
-    transition: all 1s;
-    #main-navbar {
-        border-radius: 0 0 5px 5px;
->>>>>>> d6a9ce5019b1d1298a29cc8d58472af96b814586
         height: 35px;
         background-image: none;
         background: #fff !important;
         opacity: 0.8;
         transition: opacity 0.5s;
-        
+
+   
     li {
             margin-top: 0 !important;
         }
+
+   
+    // transition: all 1s;
+    #main-navbar {
+        border-radius: 0 0 5px 5px;
+
+    // visibility: hidden;
+
+        
     transition: position 1s;
     #main-navbar {
         border-radius: 0 0 5px 5px;
     }
+}
     .logo {
         width: 100px;
     }
 }
 
-.headhesive-middle-unstick{
-<<<<<<< HEAD
-    // visibility: visible ;
-=======
-    visibility: visible ;
->>>>>>> d6a9ce5019b1d1298a29cc8d58472af96b814586
-     transition:all 1s;
-}
 
 
 /* Tablet landscape */
