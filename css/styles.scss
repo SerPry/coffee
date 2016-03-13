@@ -37,7 +37,10 @@ body{
 .hideOp {
     opacity: 0;
 }
-
+.pre-header{
+    width: 100%;
+    height: 0px;
+}
 
 header {
     .pre_nav {
@@ -558,9 +561,14 @@ footer {
         .footer-img {
             img:last-of-type {
                 top: -50px !important;
+                
                 z-index: 200;
             }
         }
+         #scene-2{
+             transform: translateY(-50px) !important;
+         }   
+    
         .container {
             .row {
                 img {
@@ -633,6 +641,7 @@ footer {
         background-size: auto 521px;
     }
     header {
+        height: 63px;
         #main-navbar {
             max-height: 75px;
             li {
@@ -753,6 +762,9 @@ footer {
                 }
             }
         }
+         #scene-2{
+             transform: translateY(0) !important;
+         }   
     }
     .obj-zone {
         .divider-2 {
@@ -838,6 +850,7 @@ footer {
     font-size: 3.5em;
     }
     header {
+        height: 125px;
         #main-navbar {
             max-height: 125px;
             li {
@@ -1084,18 +1097,19 @@ footer {
     z-index: 100;
     width: 100%;
     position: fixed;
-    visibility: hidden;
-    transition: all 1s;
-    #main-navbar {
-        border-radius: 0 0 5px 5px;
+    // visibility: hidden;
         height: 35px;
         background-image: none;
-        background-color: #fff;
+        background: #fff !important;
         opacity: 0.8;
         transition: opacity 0.5s;
-        li {
-            margin-top: 0;
+        
+    li {
+            margin-top: 0 !important;
         }
+    transition: position 1s;
+    #main-navbar {
+        border-radius: 0 0 5px 5px;
     }
     .logo {
         width: 100px;
@@ -1103,7 +1117,7 @@ footer {
 }
 
 .headhesive-middle-unstick{
-    visibility: visible ;
+    // visibility: visible ;
      transition:all 1s;
 }
 

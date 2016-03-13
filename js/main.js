@@ -8,13 +8,14 @@
         $.scrollTo($place, 500);
 
 
-        $("header")
+        $(".navbar")
             .removeClass("headhesive--unstick")
 
         .addClass("headhesive--stick");
         $(".navbar-collapse").removeClass("in");
 
     });
+    var $headerHeight = $("header").height();
     /************************** Animations ********************************************/
 
     $('#front')
@@ -25,7 +26,7 @@
                     .addClass('rotateOut');
             }
         }, {
-            offset: "35%"
+            offset: "30%"
         })
         .waypoint(function(dir) {
             if (dir === 'up') {
@@ -34,7 +35,7 @@
                     .addClass("rotateIn");
             }
         }, {
-            offset: 90
+            offset: 50
         });
 
     $('#back')
@@ -45,7 +46,7 @@
                     .addClass('rotateIn');
             }
         }, {
-            offset: "35%"
+            offset: "30%"
         })
         .waypoint(function(dir) {
             if (dir === 'up') {
@@ -54,7 +55,7 @@
                     .addClass("rotateOut");
             }
         }, {
-            offset: 90
+            offset: 50
         });
     $('.items')
         .waypoint(function(dir) {
@@ -380,13 +381,14 @@
             window.scrollBy(0, 10);
         }
         position = $(window).scrollTop();
-        if (position > 250) {
-            $("header")
+        if (position > 120) {
+            $(".navbar")
                 .removeClass("headhesive--unstick")
 
             .addClass("headhesive--stick");
+            
         } else {
-            $("header")
+            $(".navbar")
                 .removeClass("headhesive--stick")
                 .addClass("headhesive--unstick");
         }
@@ -396,18 +398,19 @@
     };
 
     function myFunction() {
-
-        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-            $("header")
+     
+    //   console.log($headerHeight);
+        if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+        //    $(".pre-header").height($headerHeight);
+            $(".navbar")
                 .removeClass("headhesive--unstick")
+                
                 .addClass("headhesive--stick");
-        } if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            $("header")
-                .addClass("headhesive-middle-unstick");
-
+                      
         } else {
-            $("header")
-                .removeClass("headhesive-middle-unstick")
+            // $(".pre-header").height(0);
+            $(".navbar")              
+                
                 .removeClass("headhesive--stick")
                 .addClass("headhesive--unstick");
         }
