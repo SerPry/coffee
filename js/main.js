@@ -324,19 +324,6 @@
 
     });
 
-    // var options = {
-    //   offset: 300
-    // }
-    // var header = new Headhesive('.header',options);
-
-    // $(".ft").find("li").hover(function () {
-    //       $(this).animate({fontSize:"40px"},300);
-
-    // });
-    // $('.content-menu ul').find('li').mouseout(function(){
-    //     $(this).animate({fontSize:'35px'},300);
-    //     $('li').removeClass('active');
-    // });
     /********************   Scroll + Nav   *********************************/
 
     function addHandler(object, event, handler, useCapture) {
@@ -346,31 +333,30 @@
             object.attachEvent('on' + event, handler);
         } else alert("Add handler is not supported");
     }
-    // Добавляем обработчики
+    // Adding hendlers
     /* Gecko */
     addHandler(window, 'DOMMouseScroll', wheel);
     /* Opera */
     addHandler(window, 'mousewheel', wheel);
     /* IE */
     addHandler(document, 'mousewheel', wheel);
-    // Обработчик события
+    // Hendler
     function wheel(event) {
-        var delta; // Направление скролла
-        // -1 - скролл вниз
-        // 1  - скролл вверх
+        var delta; // direction of scroll
+        // -1 - scrolling is down
+        // 1  - scrolling is up
         event = event || window.event;
-        // Opera и IE работают со свойством wheelDelta
+        // For opera and IE
         if (event.wheelDelta) {
             delta = event.wheelDelta / 120;
-            // В Опере значение wheelDelta такое же, но с противоположным знаком
+            // Only Opera
             if (window.opera) delta = -delta;
-            // В реализации Gecko получим свойство detail
+            // l
         } else if (event.detail) {
             delta = -event.detail / 3;
 
 
         }
-        // Запрещаем обработку события браузером по умолчанию
         if (event.preventDefault) event.preventDefault();
         event.returnValue = false;
         if (delta > 0) {
@@ -397,6 +383,9 @@
         myFunction()
     };
 
+
+    // Floating header
+    // 
     function myFunction() {
      
     //   console.log($headerHeight);
